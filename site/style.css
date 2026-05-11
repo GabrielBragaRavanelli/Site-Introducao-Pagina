@@ -16,28 +16,70 @@ body{
     font-family: "Montserrat" "sans-serif";
 }
 
+/*------------- HEADER ------------- */
+
 header{
     background-color: var(--branco-header-footer);
-}
-
-.logo-nature{
-    width: 90px;
-}
-
-.header-group{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header img{
+    width: 110px;
+    margin-left: 80px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    font-size: 20px ;
+    align-items: center;
+    gap: 40px;
+    margin-right: 150px;
 }
 
 
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center; 
+  gap: 30px;          
+}
+
+.button-group {
+  display: flex;
+  gap: 50px;
+  padding-right: 60px;        
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border-radius: 8px;     
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;    
+  border: 2px solid transparent; 
+}
 
 
+.button-group button a {
+  text-decoration: none;
+  color: inherit;         
+  display: block;         
+}
 
-
-
-
-
-
-
+/*------------- MAIN/HERO ------------- */
 
 .container{
     background-color: var(--preto-main-fundo);
