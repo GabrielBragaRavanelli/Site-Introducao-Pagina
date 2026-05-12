@@ -44,7 +44,7 @@ header ul{
 
 .link{
     text-decoration: none;
-    color: #000000;
+    color: #080808;
 }
 
 .link:hover{
@@ -86,3 +86,54 @@ header ul{
 }
 
 /*------------- Footer ------------- */
+
+footer{
+background-color: rgb(255, 255, 255);
+}
+
+footer h4{
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  font-size: 20px;
+  
+}
+
+.pfinal {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.colunas{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-left: 25rem;
+  padding: 2rem;
+  
+  
+}
+
+.colunas a{
+  text-decoration: none;
+  color: var(--preto-main-fundo);
+  font-size: 20px;
+}
+
+.colunas li{
+  list-style: none;
+  margin-bottom: 20px;
+ 
+}
+
+.social{
+  padding-top: 7px;
+}
+
+.coluna1{
+    transform: translateX(-150px); /* move para esquerda */
+}
+
+.coluna3{
+    transform: translateX(150px); /* move para direita */
+}
