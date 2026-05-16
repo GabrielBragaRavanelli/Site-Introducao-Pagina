@@ -4,42 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style-login.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Login - Nature</title>
 </head>
 <body>
-    <main class="main">
-        <div class="titulo-central">
-            <h1>Por Um Futuro Mais Verde</h1>
+<header>
+    <div class="cabecalho">
+            <div class="header1">
+                <ul class="header-group">
+                    <li><a href="#" class="link">Informe-se</a></li>
+                    <li><a href="#" class="link">Como ajudar</a></li>
+                    <li><a href="#" class="link">Notícias e Histórias</a></li>
+                    <li><a href="#" class="link">Sobre nós</a></li>
+                </ul>
+            </div>
+
+            <div class="header2">
+                <div class="button-group">
+                    <div class="botao1">
+                        <button type="button" class="btn btn-header"><a href="login.html">Login</a></button>
+                    </div>
+                    <div class="botao2">
+                        <button type="button" class="btn btn-header"><a href="#">Registre-se</a></button>
+                    </div>
+                </div>
+            </div>
         </div>
+</header>
 
-        <form action="#">
-            <h1>Login</h1>
+    <div class="titulo-central">
+        <h1>Por Um Futuro Mais Verde</h1>
+    </div>
 
-            <div class="input-box">
-                <label for="email"></label>
-                <input type="email" placeholder="Usuário">
-            </div>
+    <main class="main">
+        <div class="estrutura-login">
+            <form action="#">
+                <h1>Login</h1>
 
-            <div class="input-box">
-                <label for="password"></label>
-                <input type="password" placeholder="Senha">
-            </div>
-
-            <div class="remember-forgot"> 
-
-                    <label>
-                        <input type="checkbox" >
-                        lembrar senha
-                    </label>
-                <a href="#"><strong> Esqueci a senha</strong> </a>
+                <div class="input-box">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Usuário">
                 </div>
 
-            <button type="submit" class="login">login</button>
+                <div class="input-box">
+                    <label for="password"></label>
+                    <input type="password" placeholder="Senha">
+                </div>
 
-            <div class="register-link">
-                <p>Não possui uma conta?<a href="#">Cadastre-se</a></p>
-            </div>
-        </form>
+                <div class="remember-forgot"> 
+
+                        <label>
+                            <input type="checkbox" >
+                            Lembrar senha
+                        </label>
+                    <a href="#"><strong> Esqueci a senha</strong> </a>
+                    </div>
+
+                <button type="submit" class="login">Login</button>
+
+                <div class="register-link">
+                    <p>Não possui uma conta?<a href="#">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
     </main>
+
+<footer>
+    <h4> Nature Brasil</h4>
+
+        <nav class="colunas">
+            <div class="coluna1">
+                <ul class="lista1">
+                    <li><a href="#" class="link2">Política de Doação</a></li>
+                    <li><a href="#" class="link2">Relatórios Anuais</a></li>
+                    <li><a href="#" class="link2">Política de Comunidade</a></li>
+                    <li><a href="#" class="link2">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="coluna2">
+                <ul class="lista2">
+                    <li><a href="#" class="link2">Política de Privacidade</a></li>
+                    <li><a href="#" class="link2">Direitos Autorais</a></li>
+                    <li><a href="#" class="link2">Fale conosco</a></li>
+                    <li><a href="#" class="link2">Doe agora</a></li>
+                </ul>
+            </div>
+
+            <div class="coluna3">
+                <p>Siga-nos nas redes sociais</p>
+
+                <div class="social">
+                    <a href="#"> <i class="fa-brands fa-instagram"></i></a> 
+                    <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <p class="pfinal">Nature Brasil - CNPJ 64.711.062/0001-94 - é uma Associação civil sem fins lucrativos que goza de isenção com relação aos tributos federais devidos sobre suas receitas próprias</p>
+</footer>
 </body>
 </html>
