@@ -148,6 +148,11 @@ text-decoration: underline;
 
 /*-----Footer-----*/
 
+footer{
+    margin-top: 10rem;
+    border-top: 1px solid #E8F5E9;;
+}
+
 footer h4{
     display: flex;
     justify-content: center;
@@ -162,7 +167,7 @@ footer h4{
 }
 
 .colunas ul{
-    margin-left: 16rem;
+    margin-left: 15.6rem;
     margin-top: 20px; 
 }
 
@@ -181,17 +186,17 @@ footer h4{
     display: flex;
     justify-content: center;
     color: #E8F5E9;
-    margin-top: 35px;
+    padding: 25px;
 }
 
 .coluna3{
     margin-top: 20px;
-    color:#E8F5E9; ;
+    color:#E8F5E9; 
 }
 
 .social{
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 60px;
     display: flex;
-    gap: 20px;
+    gap: 18px;
 }
