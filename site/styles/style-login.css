@@ -16,7 +16,22 @@ body{
 
 
 /*-----Header-----*/
+.cabecalho-login ul{
+    display: flex;
+   margin-left: 480px;
+   gap: 7rem;
+   margin-top: 20px;
+}
 
+.header-group-login li{
+    list-style: none;
+}
+
+.header-group-login a{
+    text-decoration: none;
+    color: #E8F5E9;
+    font-size: x-large;
+}
 
 /*-----main-----*/
 .titulo-central{
@@ -29,7 +44,7 @@ body{
 }
 
 .main{
-    border: 2px solid;
+    border: 2px solid ;
     border-radius: 2rem;
     background-color: transparent;
     width: 100%;
@@ -56,6 +71,7 @@ form h1{
     width: 100%;
     height: 50px;
     margin: 30px 0;
+    
 }
 
 .input-box input {
@@ -132,3 +148,50 @@ text-decoration: underline;
 
 /*-----Footer-----*/
 
+footer h4{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 40px ;
+    color: #E8F5E9;
+}
+
+.colunas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+}
+
+.colunas ul{
+    margin-left: 16rem;
+    margin-top: 20px; 
+}
+
+.colunas ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.colunas ul li a{
+    text-decoration: 0;
+    color: #E8F5E9;
+}
+
+.pfinal{
+    display: flex;
+    justify-content: center;
+    color: #E8F5E9;
+    margin-top: 35px;
+}
+
+.coluna3{
+    margin-top: 20px;
+    color:#E8F5E9; ;
+}
+
+.social{
+    margin-top: 20px;
+    margin-left: 70px;
+    display: flex;
+    gap: 20px;
+}
