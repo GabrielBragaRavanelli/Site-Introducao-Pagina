@@ -1,22 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
-header {
-    border-bottom: 1px solid #E8F5E9;;
-    padding: 15px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cabecalho-login ul{
+body{
+    letter-spacing: 0.5px;
+    font-family: "Montserrat" sans-serif;
+}
+/*-----Header-----*/
+
+header{
+    background-color: var(--branco-header-footer);
+    width: 100%;
     display: flex;
-   margin-left: 480px;
-   gap: 7rem;
-   margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.header-group-login li{
+header img{
+    width: 110px;
+    margin-left: 80px;
+}
+
+header ul{
+    display: flex;
     list-style: none;
+    font-size: 20px ;
+    align-items: center;
+    gap: 40px;
+    margin-right: 350px;
 }
 
-.header-group-login a{
+.link{
     text-decoration: none;
-    color: #E8F5E9;
-    font-size: x-large;
+    color: #080808;
 }
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center; 
+  gap: 30px;          
+}
+
+.button-group {
+  display: flex;
+  gap: 50px;
+  padding-right: 60px;        
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border-radius: 8px;     
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;    
+  border: 2px solid transparent; 
+}
+
+
+.button-group button a {
+  text-decoration: none;
+  color: inherit;         
+  display: block;         
+}
+
+.botao1 button{
+    background: transparent;
+    border: 1px solid #1a5632;
+    color: #1a5632;
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao1 button:hover {
+    background: #1a5632;
+    color: #fff;
+}
+
+.botao2 button{
+    background: transparent;
+    border: 1px solid #1a5632;
+    color: #1a5632;
+    padding: 10px 0;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao2 button:hover {
+    background: #1a5632;
+    color: #fff;
+}
+
+/*-----Main-----*/
+/*-----section-content-group-----*/
+.titulos h1, p{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-principal{
+    font-size:36px;
+    margin-top: 40px;
+}
+
+.titulo-secundario{
+    font-size: 36px;
+    margin-top: 6px;
+}
+
+.titulos p{
+    font-size: 20px;
+    padding: 40px;
+}
+/*-----section-content-columns1-2*/
+.content-columns1, 
+.content-columns2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+
+.content-columns1 img{
+    height: auto;
+    max-width: unset;
+    vertical-align: middle;
+    width: 50%;
+    margin-left: 320px;
+}
+
+.content-group1{
+    
+    
+}
+
+.content-group1 h1{
+    font-size: 36px;
+    margin-bottom: 24px ;
+}
+
+.content-group1 p{
+
+}
+
+.content-group1 button{
+background: transparent;
+    border: 1px solid #1a5632;
+    color: #1a5632;
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50%;
+}
+
+.content-group1 button:hover{
+    background: #1a5632;
+    color: #fff;
+}
+
+
+
+
+.content-group2 button{
+    background: transparent;
+    border: 1px solid #1a5632;
+    color: #1a5632;
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50%;
+}
+
+.content-group2 button:hover{
+    background: #1a5632;
+    color: #fff;
+}
+
+
+/*
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 strong {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--preto-main-fundo)
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--preto-main-fundo);
+    margin-bottom: 25px;
+}
+
+
+
+/*-----section-campanha-----*/
+/*-----section-deepen-section-----*/
+/*-----Footer-----*/
