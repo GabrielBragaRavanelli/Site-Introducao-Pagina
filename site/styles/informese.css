@@ -18,6 +18,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #E8F5E9;
+    border-bottom: 0 transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08)
     
 }
 
@@ -145,9 +148,9 @@ header ul{
     margin-left: 320px;
 }
 
-.content-group1{
+.content-group1 h1,p,button{
     
-    
+
 }
 
 .content-group1 h1{
@@ -159,23 +162,7 @@ header ul{
 
 }
 
-.content-group1 button{
-background: transparent;
-    border: 1px solid #1a5632;
-    color: #1a5632;
-    padding: 10px 0;
-    width: 100%; 
-    font-weight: bold;
-    padding: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 50%;
-}
 
-.content-group1 button:hover{
-    background: #1a5632;
-    color: #fff;
-}
 
 
 

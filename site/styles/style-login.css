@@ -19,14 +19,18 @@ body{
 
 header {
     border-bottom: 1px solid #E8F5E9;;
-    padding: 15px;
+    padding: 23px;
+    border-bottom: 0 transparent;
+    box-shadow: 0 2px 5px ;
+   background-color: #112211; 
 }
 
 .cabecalho-login ul{
     display: flex;
-   margin-left: 480px;
+   margin-left: 440px;
    gap: 7rem;
    margin-top: 20px;
+   font-weight: 700;
 }
 
 .header-group-login li{
@@ -37,6 +41,9 @@ header {
     text-decoration: none;
     color: #E8F5E9;
     font-size: x-large;
+}
+.header-group-login a:hover{
+    text-decoration: underline;
 }
 
 /*-----main-----*/
@@ -151,81 +158,15 @@ form h1{
 .register-link a:hover {
 text-decoration: underline;
 }
+border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória */
+ background-color: #112211; 
+
 
 /*-----Footer-----*/
 
-footer{
-    margin-top: 10rem;
-    border-top: 1px solid #E8F5E9;;
-    
-}
-
-footer h4{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-    color: #E8F5E9;
-}
-
-.colunas {
-    display: grid;
-    grid-template-columns: repeat(3, auto); 
-    justify-content: center;               
-    gap: 120px;                             
-    align-items: start;                  
-}
-
-.colunas ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: left; 
-}
-
-.colunas ul li {
-    margin-bottom: 15px; 
-    font-size: 16px;     
-    font-weight: 600;    
-}
-
-.colunas ul li a {
-    text-decoration: none;
-    color: #ffffff;      
-}
-
-.pfinal {
-    display: flex;
-    justify-content: center;
-    color: #E8F5E9;
-    padding: 10px; 
-    font-size: 14px; 
-}
-
-.coluna3 {
-    margin-top: 18.5px; 
-    color: #E8F5E9;
-    font-size: 18px;
-}
-
-.coluna3 p {
-    margin-top: 0;
-    margin-bottom: 15px; 
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.social {
-    display: flex;
-    flex-wrap: wrap;    
-    gap: 14px;           
-    align-items: center;
-    justify-content: flex-start; 
-}
 
 
+/*
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
