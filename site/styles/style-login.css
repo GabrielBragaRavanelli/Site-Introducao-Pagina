@@ -22,7 +22,6 @@ header {
     padding: 23px;
     border-bottom: 0 transparent;
     box-shadow: 0 2px 5px ;
-   background-color: #112211; 
 }
 
 .cabecalho-login ul{
@@ -158,8 +157,7 @@ form h1{
 .register-link a:hover {
 text-decoration: underline;
 }
-border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória */
- background-color: #112211; 
+
 
 
 /*-----Footer-----*/
@@ -167,6 +165,42 @@ border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória */
 
 
 /*
+footer{
+    background-color: #112211;
+    margin-top: 280px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 10px 10px 0 0; 
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.coluna{
+    margin-left: 400px;  
+}
+
+
+footer h4{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #E8F5E9;
+}
+
+.pfooter{
+    margin-bottom: 10px;
+    color: #E8F5E9;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
@@ -183,4 +217,56 @@ border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória */
 
 .fa-linkedin {
     color: #0A66C2;
+}
+
+.colunas ul{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+.coluna1 {
+    margin-right: 200px;
+}
+
+.coluna1 ul li {
+    list-style: none;
+}
+
+.coluna1 ul li a{
+    text-decoration: none;
+    color: #050404;
+    font-weight: 500;
+}
+
+.coluna1 ul li a:hover{
+     text-decoration: underline;
+}
+
+.coluna2{
+    margin-right: 270px;
+}
+
+.coluna2 ul li {
+    list-style: none;
+}
+
+.coluna2 ul li a{
+    text-decoration: none;
+    color: #050404;
+    font-weight: 500;
+}
+
+.coluna2 ul li a:hover{
+     text-decoration: underline;
+}
+
+.pfinal{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d4b755;
+    font-weight: 500;
+    margin-top: 85px;
 }
