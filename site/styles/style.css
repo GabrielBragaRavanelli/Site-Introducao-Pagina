@@ -236,13 +236,13 @@ p {
 }
 
 .card-text h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 12px;
-
+    font-weight: bold;
 }
 
 .card-text p {
-    font-size: 14px;
+    font-size: 16px;
     color: #4a4a4a;
     line-height: 1.5;
 }
@@ -251,11 +251,13 @@ p {
     background-color: #ffde00; 
     color: var(--preto-main-fundo);
     border: none;
-    padding: 12px 24px;
+    padding: 14px 32px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 4px;
-    cursor: pointer;           
+    cursor: pointer;
+    width: calc(100% - 40px);
+    margin: 0 20px;
 }
 
 .btn-final:hover {
