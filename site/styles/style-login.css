@@ -64,6 +64,7 @@ header {
     margin: 0 auto;
     padding: 2rem;
     margin-top: 70px;
+    margin-bottom: 200px;
 }
 
 .estrutura-login{
@@ -162,44 +163,97 @@ text-decoration: underline;
 
 /*-----Footer-----*/
 
-
-
-/*
 footer{
-    background-color: #112211;
-    margin-top: 280px;
-    border-top: 2px solid rgba(255, 255, 255, 0.1); 
-    border-radius: 10px 10px 0 0; 
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    background-color:#163116; 
+    color: #fff;
+    padding-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px ;
+}
+
+.group-coluna{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+}
+
+.colunas{
+    width: 33.3%;
+}
+
+.colunas h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.colunas p{
+    font-weight: 500;
+}
+
+.social1{
+    display: flex;
+    gap: 2rem;
     
 }
 
-
-.coluna{
-    margin-left: 400px;  
-}
-
-
-footer h4{
-    margin-top: 100px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #E8F5E9;
-}
-
-.pfooter{
-    margin-bottom: 10px;
-    color: #E8F5E9;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.social{
-    margin-bottom: 10px;
+.social1 i{
+    margin-top: 15px;
+    margin-bottom: 45px;
     font-size: 18px;
 }
 
+.lista2{
+    text-align: center;
+    line-height: 2;
+    
+}
+.lista2 li{
+    list-style: none;
+    
+}
 
+.lista2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.lista2 a:hover{
+    text-decoration: underline;
+
+}
+
+.lista3{
+    text-align: center;
+    line-height: 2;
+    
+}
+.lista3 li{
+    list-style: none;
+    
+}
+
+.lista3 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.lista3 a:hover{
+    text-decoration: underline;
+
+}
+
+.pfinal{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px;
+    color: #070707;
+    background-color: #d4b755;
+    font-weight: 500;
+}
 
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -208,7 +262,6 @@ footer h4{
     background-clip: text;
     display: inline-block;
 }
-
 
 .fa-facebook {
     color: #1877F2;
@@ -219,54 +272,9 @@ footer h4{
     color: #0A66C2;
 }
 
-.colunas ul{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 10px;
-    gap: 30px;
-}
 
-.coluna1 {
-    margin-right: 200px;
-}
 
-.coluna1 ul li {
-    list-style: none;
-}
 
-.coluna1 ul li a{
-    text-decoration: none;
-    color: #050404;
-    font-weight: 500;
-}
 
-.coluna1 ul li a:hover{
-     text-decoration: underline;
-}
+/*background-color: #112211;
 
-.coluna2{
-    margin-right: 270px;
-}
-
-.coluna2 ul li {
-    list-style: none;
-}
-
-.coluna2 ul li a{
-    text-decoration: none;
-    color: #050404;
-    font-weight: 500;
-}
-
-.coluna2 ul li a:hover{
-     text-decoration: underline;
-}
-
-.pfinal{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #d4b755;
-    font-weight: 500;
-    margin-top: 85px;
-}
