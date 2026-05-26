@@ -8,7 +8,7 @@
 
 body{
     letter-spacing: normal;
-    font-family: "Montserrat", sans-serif;
+     font-family: "Poppins", sans-serif;
     background: url("/site/img/fundo.jpg");
     background-size: cover;
     background-position: center;
@@ -26,11 +26,12 @@ header {
 
 .cabecalho-login ul{
     display: flex;
-   margin-left: 440px;
-   gap: 7rem;
-   margin-top: 20px;
-   font-weight: 700;
-}
+    justify-content: center;
+    gap: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    
+} 
 
 .header-group-login li{
     list-style: none;
@@ -156,7 +157,7 @@ form h1{
 }
 
 .register-link a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -167,8 +168,10 @@ footer{
     background-color:#163116; 
     color: #fff;
     padding-top: 50px;
-    border-radius: 10px;
+    border-top: 2px solid #070707;
+    border-radius: 15px;
     box-shadow: 0 2px 5px ;
+   
 }
 
 .group-coluna{
@@ -217,6 +220,7 @@ footer{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
+    
 }
 
 .lista2 a:hover{
@@ -251,7 +255,7 @@ footer{
     font-size: 16px;
     padding: 10px;
     color: #070707;
-    background-color: #d4b755;
+    background-color: #ffde00; 
     font-weight: 500;
 }
 
