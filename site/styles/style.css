@@ -6,6 +6,7 @@
   --cinza-fundo:#f7f7f7;
 
 }
+
 *{
  margin: 0;
  padding: 0;
@@ -15,23 +16,26 @@
 
 body{
     font-family: "Montserrat" "sans-serif";
-    background-color: var(--cinza-fundo)
+    background-color: var(--cinza-fundo);
+    margin: 0;
+    padding: 0;
 }
 
 /*------------- HEADER ------------- */
 
 header{
-    background-color: var(--branco-header-footer);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 15px;
+    background-color: #163116;
 }
 
-header img{
-    width: 110px;
-    margin-left: 80px;
+.icone{
+    font-size: 60px;
+    margin-left: 410px;
+    color: var(--branco-header-footer);
 }
 
 header ul{
@@ -41,12 +45,15 @@ header ul{
     align-items: center;
     gap: 40px;
     margin-right: 310px;
+    margin-bottom: bold;
+    
 }
 
 
 .link{
     text-decoration: none;
-    color: #080808;
+    color: var(--branco-header-footer)
+
 }
 
 .link:hover{
@@ -81,17 +88,53 @@ header ul{
   display: block;         
 }
 
-/*------------- MAIN/HERO ------------- */
+.botao1 button{
+    background: transparent;
+    border: 1px solid var(--preto-main-fundo);
+    color: var(--branco-header-footer);
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.botao2 button:hover {
+    background: #ffffff;
+    color: var(--preto-main-fundo);
+}
+
+.botao2 button{
+    background: transparent;
+    border: 1px solid var(--preto-main-fundo);
+    color: var(--branco-header-footer);
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao2 button:hover {
+    background: #ffffff;
+    color: var(--preto-main-fundo);
+}
+
+
+/*------------- MAIN/HERO ------------- */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 90px;
+
 }
 
 h1 {
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 2.5rem;
 }
 
 .hero {
@@ -125,9 +168,10 @@ h1 {
 
 
 [class^="paragrafo"] p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--preto-main-fundo);
+    font-weight: 200;
 }
 
 .content {
@@ -137,9 +181,11 @@ h1 {
 }
 
 .content h1 {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     color: var(--preto-main-fundo);
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .content-columns1, 
@@ -167,9 +213,11 @@ img {
 
 h1 strong {
     display: block;
-    font-size: 32px;
+    font-size: 2.5rem;
     margin-bottom: 15px;
-    color: var(--preto-main-fundo)
+    color: var(--preto-main-fundo);
+    font-weight: bold;
+    
 }
 
 p {
@@ -199,7 +247,7 @@ p {
 .content-final h1 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 2.5rem;
 }
 
 .content-final-columns {
@@ -236,15 +284,18 @@ p {
 }
 
 .card-text h3 {
-    font-size: 20px;
+    font-size: 1.4rem;
     margin-bottom: 12px;
     font-weight: bold;
+    text-align: center;
 }
 
 .card-text p {
     font-size: 16px;
-    color: #4a4a4a;
+    color: var(--preto-main-fundo);
     line-height: 1.5;
+    font-weight: 200;
+    text-align: center;
 }
 
 .btn-final {
@@ -272,65 +323,100 @@ p {
 /*------------- Footer ------------- */
 
 footer{
-    background-color: var(--branco-header-footer);
-    padding-bottom: 25px;      
-    overflow: hidden;
+    background-color:#163116; 
+    color: #fff;
+    padding-top: 50px;
+    border-top: 2px solid #070707;
+    border-radius: 15px;
+    margin-top: 90px;
+    
 }
 
-footer h4{
-  display: flex;
-  justify-content: center;
-  padding-top: 8px;
-  font-size: 20px; 
-}
-
-.pfinal {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0px !important; 
-  padding-bottom: 0px !important; 
+.group-coluna{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 1140px;
 }
 
 .colunas{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  margin-left: 25rem;
-  padding: 1.2rem;
-  align-items: start;
+    width: 33.3%;
 }
 
-.colunas a{
-  text-decoration: none;
-  color: var(--preto-main-fundo);
-  font-size: 20px;
-}
-
-.colunas li{
-  list-style: none;
-  margin-bottom: 13px;
-}
-
-.social{
-  padding-top: 7px;
-  margin-top: 15px; 
-    padding-top: 0px;
-}
-
-.social a{
+.colunas h4{
+    margin-bottom: 15px;
     font-size: 20px;
 }
 
-.coluna1{
-    transform: translateX(-150px); 
+.colunas p{
+    font-weight: 500;
+    color: #f7f7f7;
 }
 
-.coluna3{
-    transform: translateX(150px); 
+.social1{
+    display: flex;
+    gap: 2rem;
+    
 }
 
-.coluna3 p {
-    font-size: 20px;
-    margin-bottom: 20px;
+.social1 i{
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+
+.lista2{
+    text-align: center;
+    line-height: 2;
+    
+}
+.lista2 li{
+    list-style: none;
+    
+}
+
+.lista2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.lista2 a:hover{
+    text-decoration: underline;
+
+}
+
+.lista3{
+    text-align: center;
+    line-height: 2;
+    
+}
+.lista3 li{
+    list-style: none;
+    
+}
+
+.lista3 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.lista3 a:hover{
+    text-decoration: underline;
+
+}
+
+.pfinal{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding: 15px;
+    margin: 0;
+    color: var(--preto-main-fundo);
+    background-color: #ffde00; 
+    font-weight: 500;
 }
 
 .fa-instagram {

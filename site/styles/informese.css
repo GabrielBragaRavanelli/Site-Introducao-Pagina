@@ -36,6 +36,7 @@ header ul{
     align-items: center;
     gap: 40px;
     margin-right: 350px;
+    font-weight: bold;
 }
 
 .link{
