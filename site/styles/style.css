@@ -90,37 +90,32 @@ header ul{
 }
 
 .botao1 button{
-    background: transparent;
+    background: var(--branco-header-footer);
     border: 1px solid var(--preto-main-fundo);
-    color: var(--branco-header-footer);
+    color: #235347;
     padding: 10px 0;
     width: 100%; 
     font-weight: bold;
     padding: 15px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.botao2 button:hover {
-    background: #ffffff;
-    color: var(--preto-main-fundo);
-}
 
 .botao2 button{
-    background: transparent;
+    background: var(--branco-header-footer);
     border: 1px solid var(--preto-main-fundo);
-    color: var(--branco-header-footer);
+    color: #235347;
     padding: 10px 0;
     width: 100%; 
     font-weight: bold;
     padding: 15px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.botao2 button:hover {
-    background: #ffffff;
-    color: var(--preto-main-fundo);
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -244,8 +239,8 @@ p {
 
 .btn {
     background: transparent;
-    border: 1px solid #1a5632;
-    color: #1a5632;
+    border: 1px solid #235347;
+    color: #235347;
     padding: 10px 0;
     width: 100%; 
     font-weight: bold;
@@ -254,7 +249,7 @@ p {
 }
 
 .btn:hover {
-    background: #1a5632;
+    background: #235347;
     color: var(--branco-header-footer);
 }
 
@@ -432,7 +427,7 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 16px;
-    padding: 15px;
+    padding: 10px;
     margin: 0;
     color: var(--preto-main-fundo);
     background-color: #FEFAE0; 
