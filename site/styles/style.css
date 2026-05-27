@@ -370,14 +370,12 @@ footer{
 
 .social1{
     display: flex;
-    gap: 2rem;
-    
+    gap: 2rem;    
 }
 
 .social1 i{
-    margin-top: 15px;
-    margin-bottom: 45px;
     font-size: 18px;
+    margin-bottom: 40px;
 }
 
 .lista2{
@@ -430,7 +428,7 @@ footer{
     padding: 10px;
     margin: 0;
     color: var(--preto-main-fundo);
-    background-color: #FEFAE0; 
+    background-color: #FDFBF0;
     font-weight: 500;
 }
 

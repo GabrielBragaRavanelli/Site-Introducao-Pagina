@@ -9,19 +9,21 @@
 body{
     letter-spacing: normal;
      font-family: "Poppins", sans-serif;
-    background: url("/site/img/img.jpg.avif");
+    background: url("/site/img/jacek-ulinski-KFtxqMnbMD4-unsplash.jpg");
     background-size: cover;
     background-position: center;
+
 }
 
 
 /*-----Header-----*/
 
 header {
-    border-bottom: 1px solid #E8F5E9;;
+    border-bottom: 1px solid #E8F5E9;
     padding: 23px;
     border-bottom: 0 transparent;
     box-shadow: 0 2px 5px ;
+    background-color: #235347;;
 }
 
 .cabecalho-login ul{
@@ -31,6 +33,7 @@ header {
     font-weight: bold;
     font-size: 18px;
     
+    
 } 
 
 .header-group-login li{
@@ -39,8 +42,10 @@ header {
 
 .header-group-login a{
     text-decoration: none;
-    color: #000000; 
+    color: #FFF;
     font-size: x-large;
+    font-weight: bold;
+
 }
 .header-group-login a:hover{
     text-decoration: underline;
@@ -52,20 +57,21 @@ header {
     justify-content: center;
     margin-top:6rem;
     font-size: x-large;
-    color: #000000;
-    
+    color: #235347;
+    font-weight: 900;
 }
 
 .main{
-    border: 2px solid ;
     border-radius: 2rem;
-    background-color: transparent;
     width: 100%;
     max-width: 450px; 
     margin: 0 auto;
     padding: 2rem;
     margin-top: 70px;
     margin-bottom: 350px;
+    backdrop-filter: blur(5px);
+    background-color:#FDFBF0;
+    border: 1px solid;
 }
 
 .estrutura-login{
@@ -77,7 +83,7 @@ header {
 form h1{
     font-size: 36px;
     text-align: center;
-    color: #000000;
+    color: #235347;
 }
 
 .input-box{
@@ -93,33 +99,35 @@ form h1{
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: 2px solid;
+    border: 3px solid;
     border-radius: 2rem;
     font-size: 16px;
-    color:#fff;
+    color:#070707;
     padding: 20px 45px 20px 20px;
 }
 
-.input-box::placeholder {
-    color: #fff;
-    opacity: 0.8; 
+.input-box input::placeholder {
+    color: #070707;
+    opacity: 1; 
 }
 
 .remember-forgot {
     display: flex;
     justify-content: space-between;
     margin: -15px 0 15px;
-    font-size: 14px;
+    font-size: 16px;
+    color: #070707;
     
 }
 
 .remember-forgot label input{
-    accent-color: #fff;
+    accent-color: #070707
 }
 
 .remember-forgot a {
     text-decoration: none;
-    color: #fff;
+    color: #070707;
+    font-size: 16px;
 }
 
 .remember-forgot a:hover {
@@ -129,31 +137,32 @@ form h1{
 .login{
     width:100%;
     height: 50px;
-    background-color: #fff;
+    background-color: #235347;
     border: none;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px ;
-    color: #333;
+    color: #FFF;
     font-weight: 600;
 }
 
 .login:hover {
-    background-color: transparent;
+    background-color: #FFF;
     border: 2px solid;
-    color: #fff;
+    color: #070707;
 }
 
 .register-link{
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     margin: 20px 0 ;
 }
 
 .register-link a{
     text-decoration: none;
-    color:#fff;
+    color:#070707;
     font-weight: 600;
+    
 }
 
 .register-link a:hover {
@@ -255,7 +264,7 @@ footer{
     font-size: 16px;
     padding: 10px;
     color: #070707;
-    background-color: #EEE9DF; 
+    background-color: #FDFBF0; 
     font-weight: 500;
 }
 
@@ -280,5 +289,5 @@ footer{
 
 
 
-/*background-color: #112211;
+/*background-color: #112211; #235347; #FEFAE0; 
 
