@@ -15,15 +15,24 @@ body{
 
 }
 
+:root {
+  --preto-main-fundo: #000000;
+  --branco-header-footer: #ffffff;
+  --verde-agua:#235347;
+  --bege:#FDFBF0;
+  --amarelo: #ffde00;
+  --amarelo-hover:#e5c700;
+
+}
 
 /*-----Header-----*/
 
 header {
-    border-bottom: 1px solid #E8F5E9;
+    border-bottom: 1px solid var(--bege);
     padding: 23px;
     border-bottom: 0 transparent;
     box-shadow: 0 2px 5px ;
-    background-color: #235347;;
+    background-color: var(--verde-agua);
 }
 
 .cabecalho-login ul{
@@ -42,7 +51,7 @@ header {
 
 .header-group-login a{
     text-decoration: none;
-    color: #FFF;
+    color: var(--branco-header-footer);
     font-size: x-large;
     font-weight: bold;
 
@@ -57,7 +66,7 @@ header {
     justify-content: center;
     margin-top:6rem;
     font-size: x-large;
-    color: #235347;
+    color: var(--verde-agua);
     font-weight: 900;
 }
 
@@ -70,7 +79,7 @@ header {
     margin-top: 70px;
     margin-bottom: 350px;
     backdrop-filter: blur(5px);
-    background-color:#FDFBF0;
+    background-color:var(--bege);
     border: 1px solid;
 }
 
@@ -83,7 +92,7 @@ header {
 form h1{
     font-size: 36px;
     text-align: center;
-    color: #235347;
+    color: var(--verde-agua);
 }
 
 .input-box{
@@ -102,12 +111,12 @@ form h1{
     border: 3px solid;
     border-radius: 2rem;
     font-size: 16px;
-    color:#070707;
+    color:var(--preto-main-fundo);
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: #070707;
+    color: var(--preto-main-fundo);
     opacity: 1; 
 }
 
@@ -116,17 +125,17 @@ form h1{
     justify-content: space-between;
     margin: -15px 0 15px;
     font-size: 16px;
-    color: #070707;
+    color: var(--preto-main-fundo);
     
 }
 
 .remember-forgot label input{
-    accent-color: #070707
+    accent-color: var(--preto-main-fundo)
 }
 
 .remember-forgot a {
     text-decoration: none;
-    color: #070707;
+    color: var(--preto-main-fundo);
     font-size: 16px;
 }
 
@@ -137,7 +146,7 @@ form h1{
 .login{
     width:100%;
     height: 50px;
-    background-color: #235347;
+    background-color: var(--verde-agua);
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -147,9 +156,9 @@ form h1{
 }
 
 .login:hover {
-    background-color: #FFF;
+    background-color: var(--branco-header-footer);
     border: 2px solid;
-    color: #070707;
+    color: var(--preto-main-fundo);
 }
 
 .register-link{
@@ -160,7 +169,7 @@ form h1{
 
 .register-link a{
     text-decoration: none;
-    color:#070707;
+    color:var(--preto-main-fundo);
     font-weight: 600;
     
 }
@@ -174,10 +183,10 @@ form h1{
 /*-----Footer-----*/
 
 footer{
-    background-color:#235347; 
-    color: #fff;
+    background-color:var(--verde-agua); 
+    color: var(--branco-header-footer);
     padding-top: 50px;
-    border-top: 2px solid #070707;
+    border-top: 2px solid var(--preto-main-fundo);
     border-radius: 15px;
     box-shadow: 0 2px 5px ;
    
@@ -227,7 +236,7 @@ footer{
 
 .lista2 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--branco-header-footer);
     font-weight: 500;
     
 }
@@ -249,7 +258,7 @@ footer{
 
 .lista3 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--branco-header-footer);
     font-weight: 500;
 }
 
@@ -263,8 +272,8 @@ footer{
     justify-content: center;
     font-size: 16px;
     padding: 10px;
-    color: #070707;
-    background-color: #FDFBF0; 
+    color: var(--preto-main-fundo);
+    background-color: var(--branco-header-footer); 
     font-weight: 500;
 }
 

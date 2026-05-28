@@ -10,6 +10,156 @@ body{
     letter-spacing: normal;
      font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --preto-main-fundo: #000000;
+  --branco-header-footer: #ffffff;
+  --verde-agua:#235347;
+  --bege:#FDFBF0;
+  --amarelo: #ffde00;
+  --amarelo-hover:#e5c700;
+
+}
+
 /*------------- Header ------------- */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--verde-agua);
+    margin-bottom: 60px;
+}
+
+.icone{
+    font-size: 60px;
+    margin-left: 510px;
+    color: var(--branco-header-footer);
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    font-size: 20px ;
+    font-weight: bold;
+    align-items: center;
+    gap: 40px;
+    margin-right: 360px;
+    margin-bottom: bold;
+    
+}
+
+
+.link{
+    text-decoration: none;
+    color: var(--branco-header-footer)
+
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center; 
+  gap: 30px;          
+}
+
+.button-group {
+  display: flex;
+  gap: 50px;
+  padding-right: 60px;        
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border-radius: 8px;     
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;    
+  border: 2px solid transparent; 
+}
+
+
+.button-group button a {
+  text-decoration: none;
+  color: inherit;         
+  display: block;         
+}
+
+.botao1 button{
+    background: var(--branco-header-footer);
+    border: 1px solid var(--preto-main-fundo);
+    color: var(--verde-agua);
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao1 button:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+}
+
+
+.botao2 button{
+    background: var(--branco-header-footer);
+    border: 1px solid var(--preto-main-fundo);
+    color: var(--verde-agua);
+    padding: 10px 0;
+    width: 100%; 
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao2 button:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+}
 /*------------- Main ------------- */
+
+main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px; 
+  width: 100%;       
+  margin: 0 auto;
+
+}
+
+.titulos h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.titulos p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.columns-group {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
 /*------------- Footer ------------- */
