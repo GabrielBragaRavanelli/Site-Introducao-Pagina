@@ -41,6 +41,10 @@ header{
     color: var(--branco-header-footer);
 }
 
+.icone a{
+    color: var(--branco-header-footer);
+}
+
 header ul{
     display: flex;
     list-style: none;
