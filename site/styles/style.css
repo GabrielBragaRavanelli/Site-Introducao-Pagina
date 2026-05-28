@@ -3,10 +3,12 @@
 :root {
   --preto-main-fundo: #000000;
   --branco-header-footer: #ffffff;
-  --cinza-fundo:#f7f7f7;
+  --verde-agua:#235347;
+  --bege:#FDFBF0;
+  --amarelo: #ffde00;
+  --amarelo-hover:#e5c700;
 
 }
-
 *{
  margin: 0;
  padding: 0;
@@ -29,7 +31,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #235347;
+    background-color: var(--verde-agua);
     margin-bottom: 60px;
 }
 
@@ -43,6 +45,7 @@ header ul{
     display: flex;
     list-style: none;
     font-size: 20px ;
+    font-weight: bold;
     align-items: center;
     gap: 40px;
     margin-right: 310px;
@@ -92,7 +95,7 @@ header ul{
 .botao1 button{
     background: var(--branco-header-footer);
     border: 1px solid var(--preto-main-fundo);
-    color: #235347;
+    color: var(--verde-agua);
     padding: 10px 0;
     width: 100%; 
     font-weight: bold;
@@ -107,7 +110,7 @@ header ul{
 .botao2 button{
     background: var(--branco-header-footer);
     border: 1px solid var(--preto-main-fundo);
-    color: #235347;
+    color: var(--verde-agua);
     padding: 10px 0;
     width: 100%; 
     font-weight: bold;
@@ -239,8 +242,8 @@ p {
 
 .btn {
     background: transparent;
-    border: 1px solid #235347;
-    color: #235347;
+    border: 1px solid var(--verde-agua);
+    color: var(--verde-agua);
     padding: 10px 0;
     width: 100%; 
     font-weight: bold;
@@ -249,7 +252,7 @@ p {
 }
 
 .btn:hover {
-    background: #235347;
+    background: var(--verde-agua);
     color: var(--branco-header-footer);
 }
 
@@ -301,7 +304,7 @@ p {
 .card-text h3 {
     font-size: 1.4rem;
     margin-bottom: 12px;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -314,7 +317,7 @@ p {
 }
 
 .btn-final {
-    background-color: #ffde00; 
+    background-color: var(--amarelo); 
     color: var(--preto-main-fundo);
     border: none;
     padding: 14px 32px;
@@ -327,7 +330,7 @@ p {
 }
 
 .btn-final:hover {
-    background-color: #e5c700; 
+    background-color: var(--amarelo-hover); 
 }
 
 .btn-final a{
@@ -338,10 +341,10 @@ p {
 /*------------- Footer ------------- */
 
 footer{
-    background-color:#235347;
-    color: #fff;
+    background-color:var(--verde-agua);
+    color: var(--branco-header-footer);
     padding-top: 50px;
-    border-top: 2px solid #070707;
+    border-top: 2px solid var(--preto-main-fundo);
     border-radius: 15px;
     margin-top: 90px;
     
@@ -365,7 +368,7 @@ footer{
 
 .colunas p{
     font-weight: 500;
-    color: #f7f7f7;
+    color: var(--branco-header-footer);
 }
 
 .social1{
@@ -390,7 +393,7 @@ footer{
 
 .lista2 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--branco-header-footer);
     font-weight: 500;
     
 }
@@ -412,7 +415,7 @@ footer{
 
 .lista3 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--branco-header-footer);
     font-weight: 500;
 }
 
@@ -428,7 +431,7 @@ footer{
     padding: 10px;
     margin: 0;
     color: var(--preto-main-fundo);
-    background-color: #FDFBF0;
+    background-color: var(--branco-header-footer);
     font-weight: 500;
 }
 
