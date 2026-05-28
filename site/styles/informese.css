@@ -33,6 +33,10 @@ header{
     margin-bottom: 60px;
 }
 
+.icone a{
+    color: var(--branco-header-footer);
+}
+
 .icone{
     font-size: 60px;
     margin-left: 510px;

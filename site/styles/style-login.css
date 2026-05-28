@@ -60,6 +60,10 @@ header {
     text-decoration: underline;
 }
 
+.header-group-login i{
+    font-size: 40px;
+}
+
 /*-----main-----*/
 .titulo-central{
     display: flex;
