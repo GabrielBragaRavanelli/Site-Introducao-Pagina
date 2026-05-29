@@ -29,7 +29,6 @@ body{
 
 header {
     border-bottom: 1px solid var(--bege);
-    padding: 23px;
     border-bottom: 0 transparent;
     box-shadow: 0 2px 5px ;
     background-color: var(--verde-agua);
@@ -47,6 +46,7 @@ header {
 
 .header-group-login li{
     list-style: none;
+    margin-top: 40px;
 }
 
 .header-group-login a{
@@ -61,7 +61,8 @@ header {
 }
 
 .header-group-login i{
-    font-size: 40px;
+    font-size: 60px;
+    padding: 28px;
 }
 
 /*-----main-----*/
