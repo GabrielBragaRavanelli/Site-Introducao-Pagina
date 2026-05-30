@@ -164,6 +164,7 @@ main {
     padding: 0 20px;
 }
 
+/*
 .content-img1, .content-img2{
     width: 100%;
     height: auto;
@@ -187,6 +188,51 @@ main {
 .content-group1, .content-group2 {
     flex: 1;
 }
+
+*/
+
+
+.cadastrar{
+    margin-bottom: 120px;
+}
+
+.cadastrar h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.cadastrar h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 11.6;
+}
+
+.botao-cadastrar{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-cadastrar button{
+    background-color: var(--amarelo);
+    border: 1px solid var(--preto-main-fundo) ;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.botao-cadastrar button:hover{
+    color: var(--preto-main-fundo);
+    background-color: var(--amarelo-hover);
+    font-weight: bold;
+}
+
+.botao-cadastrar a{
+    color: var(--preto-main-fundo);
+    text-decoration: none;
+}
+
 /*------------- Footer ------------- */
 
 footer{
