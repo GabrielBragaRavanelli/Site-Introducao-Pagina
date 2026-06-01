@@ -34,14 +34,16 @@ header {
     background-color: var(--verde-agua);
 }
 
+.cabecalho-login{
+    position: relative;
+}
+
 .cabecalho-login ul{
     display: flex;
     justify-content: center;
     gap: 80px;
     font-weight: bold;
     font-size: 18px;
-    
-    
 } 
 
 .header-group-login li{
@@ -302,6 +304,4 @@ footer{
 
 
 
-
-/*background-color: #112211; #235347; #FEFAE0; 
 
