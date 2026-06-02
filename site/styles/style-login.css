@@ -27,24 +27,21 @@ body{
 
 /*-----Header-----*/
 
-header {
+.estrutura-header-login{
     border-bottom: 1px solid var(--bege);
     border-bottom: 0 transparent;
     box-shadow: 0 2px 5px ;
     background-color: var(--verde-agua);
 }
 
-.cabecalho-login{
-    position: relative;
-}
-
-.cabecalho-login ul{
+.header-login ul{
     display: flex;
     justify-content: center;
     gap: 80px;
     font-weight: bold;
     font-size: 18px;
-} 
+    margin-left: 54px;
+}
 
 .header-group-login li{
     list-style: none;
@@ -58,6 +55,7 @@ header {
     font-weight: bold;
 
 }
+
 .header-group-login a:hover{
     text-decoration: underline;
 }

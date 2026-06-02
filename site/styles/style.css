@@ -25,6 +25,11 @@ body{
 
 /*------------- HEADER ------------- */
 
+
+
+
+
+
 header{
     width: 100%;
     display: flex;
@@ -35,13 +40,13 @@ header{
     margin-bottom: 60px;
 }
 
-.icone{
-    font-size: 60px;
-    margin-left: 510px;
+.icone a{
     color: var(--branco-header-footer);
 }
 
-.icone a{
+.icone{
+    font-size: 60px;
+    margin-left: 650px;
     color: var(--branco-header-footer);
 }
 
@@ -52,7 +57,7 @@ header ul{
     font-weight: bold;
     align-items: center;
     gap: 40px;
-    margin-right: 310px;
+    margin-right: 450px;
     margin-bottom: 0;
     
 }
@@ -110,6 +115,11 @@ header ul{
     font-weight: bold;
 }
 
+.botao1 button:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+}
+
 
 .botao2 button{
     background: var(--branco-header-footer);
@@ -125,6 +135,15 @@ header ul{
     font-weight: bold;
 }
 
+.botao2 button:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+}
+
+/*
+<div class="icone">
+           <a href="index.html"><i class="fa-solid fa-earth-americas"></i></a> 
+        </div>
 
 /*------------- MAIN/HERO ------------- */
 main {

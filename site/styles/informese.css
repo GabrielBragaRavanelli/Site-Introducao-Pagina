@@ -39,7 +39,7 @@ header{
 
 .icone{
     font-size: 60px;
-    margin-left: 510px;
+    margin-left: 650px;
     color: var(--branco-header-footer);
 }
 
@@ -50,7 +50,7 @@ header ul{
     font-weight: bold;
     align-items: center;
     gap: 40px;
-    margin-right: 360px;
+    margin-right: 500px;
     margin-bottom: 0;
     
 }
