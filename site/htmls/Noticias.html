@@ -36,9 +36,61 @@
         </div>
     </header>
     <main>
-        <section>
 
+        <div class="titulo-principal">
+            <h1>Notícias e Histórias</h1>
+        </div>
+
+        <section>
+            <div class="filter-container">
+        
+            <div class="filter-group">
+                <label for="tipo-conteudo">Tipo do conteúdo</label>
+                <select id="tipo-conteudo" class="active">
+                    <option value="todos">Todos os posts</option>
+                    <option value="artigos">Artigos</option>
+                    <option value="videos">Vídeos</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="blog">Blog</option>
+                    <option value="voluntario">Voluntário</option>
+                    <option value="vagas">Vagas</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="categoria">Categoria</label>
+                <select id="categoria">
+                    <option value="todos">Todos os tópicos</option>
+                    <option value="nature">Nature</option>
+                    <option value="oceanos">Oceanos</option>
+                    <option value="amazonia">Amazônia</option>
+                    <option value="inspire-ativismo">Inspire Ativismo</option>
+                    <option value="povos-e-territórios">Povos e territórios</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="palavras-chave">Palavras-chave</label>
+                <select id="palavras-chave">
+                    <option value="todas">Todas as palavras-chave</option>
+                    <option value="mineração">Mineração</option>
+                    <option value="oceanos">Oceanos</option>
+                    <option value="povos">Povos</option>
+                    <option value="energia">Energia</option>
+                    <option value="clima">Clima</option>
+                    <option value="cidade">Cidade</option>
+                    <option value="fauna">Fauna</option>
+                    <option value="biodiversidade">Biodiversidade</option>
+                    <option value="floresta">Florestas</option>
+                    <option value="expedicao">Expedição</option>
+                    <option value="garimpo">Garimpo</option>
+                    
+                </select>
+            </div>
+
+                <button class="btn-filter">Aplicar Filtros</button>
         </section>
+
         <section>
             <div class="content1">
                 <div class="img-content">
