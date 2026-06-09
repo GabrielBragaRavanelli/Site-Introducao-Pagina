@@ -49,7 +49,7 @@ header ul{
     font-weight: bold;
     align-items: center;
     gap: 40px;
-    margin-right: 450px;
+    margin-right: 500px;
     margin-bottom: 0;
     
 }
@@ -136,6 +136,7 @@ header ul{
 
 main {
   width: 100%;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -145,10 +146,11 @@ main {
 
 }
 
-.titulo-principal {
+.titulo-principal h1 {
     margin-bottom: 40px;
-    font-size: 2.5rem;
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .container > h1 {
@@ -158,10 +160,58 @@ main {
     padding: 0 20px;
 }
 
+.filter-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 220px;
+}
+
+.filter-group label{
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    color: var(--preto-main-fundo);
+}
+
+.filter-group select{
+    border-radius: 5px;
+    border: 2px solid var(--preto-main-fundo);
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+    min-width: 180px;
+}
+
+.botão-filter{
+    background-color: var(--amarelo); 
+    color: var(--preto-main-fundo);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 14px 18px;
+    align-self: flex-end;
+    min-height: 56px;
+}
+
+.botão-filter:hover {
+    background-color: var(--amarelo-hover); 
+}
+
 .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 20px 0;
+    border-top: 2px solid var(--cinza-fundo);
 }
 
 .content {
