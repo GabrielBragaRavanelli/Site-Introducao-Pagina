@@ -53,7 +53,7 @@ header ul{
     font-weight: bold;
     align-items: center;
     gap: 40px;
-    margin-right: 450px;
+    margin-right: 500px;
     margin-bottom: 0;
     
 }
@@ -135,7 +135,6 @@ header ul{
     background: var(--verde-agua);
     color: var(--branco-header-footer);
 }
-
 /*
 <div class="icone">
            <a href="index.html"><i class="fa-solid fa-earth-americas"></i></a> 
