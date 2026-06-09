@@ -35,115 +35,132 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="container">
 
         <div class="titulo-principal">
             <h1>Notícias e Histórias</h1>
         </div>
 
-        <section>
+        <section class="hero">
             <div class="filter-container">
         
-            <div class="filter-group">
-                <label for="tipo-conteudo">Tipo do conteúdo</label>
-                <select id="tipo-conteudo" class="active">
-                    <option value="todos">Todos os posts</option>
-                    <option value="artigos">Artigos</option>
-                    <option value="videos">Vídeos</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="blog">Blog</option>
-                    <option value="voluntario">Voluntário</option>
-                    <option value="vagas">Vagas</option>
-                </select>
-            </div>
+                <div class="filter-group">
+                    <label for="tipo-conteudo">Tipo do conteúdo</label>
+                    <select id="tipo-conteudo" class="active">
+                        <option value="todos">Todos os posts</option>
+                        <option value="artigos">Artigos</option>
+                        <option value="videos">Vídeos</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="blog">Blog</option>
+                        <option value="voluntario">Voluntário</option>
+                        <option value="vagas">Vagas</option>
+                    </select>
+                </div>
 
-            <div class="filter-group">
-                <label for="categoria">Categoria</label>
-                <select id="categoria">
-                    <option value="todos">Todos os tópicos</option>
-                    <option value="nature">Nature</option>
-                    <option value="oceanos">Oceanos</option>
-                    <option value="amazonia">Amazônia</option>
-                    <option value="inspire-ativismo">Inspire Ativismo</option>
-                    <option value="povos-e-territórios">Povos e territórios</option>
-                </select>
-            </div>
+                <div class="filter-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option value="todos">Todos os tópicos</option>
+                        <option value="nature">Nature</option>
+                        <option value="oceanos">Oceanos</option>
+                        <option value="amazonia">Amazônia</option>
+                        <option value="inspire-ativismo">Inspire Ativismo</option>
+                        <option value="povos-e-territórios">Povos e territórios</option>
+                    </select>
+                </div>
 
-            <div class="filter-group">
-                <label for="palavras-chave">Palavras-chave</label>
-                <select id="palavras-chave">
-                    <option value="todas">Todas as palavras-chave</option>
-                    <option value="mineração">Mineração</option>
-                    <option value="oceanos">Oceanos</option>
-                    <option value="povos">Povos</option>
-                    <option value="energia">Energia</option>
-                    <option value="clima">Clima</option>
-                    <option value="cidade">Cidade</option>
-                    <option value="fauna">Fauna</option>
-                    <option value="biodiversidade">Biodiversidade</option>
-                    <option value="floresta">Florestas</option>
-                    <option value="expedicao">Expedição</option>
-                    <option value="garimpo">Garimpo</option>
-                    
-                </select>
+                <div class="filter-group">
+                    <label for="palavras-chave">Palavras-chave</label>
+                    <select id="palavras-chave">
+                        <option value="todas">Todas as palavras-chave</option>
+                        <option value="mineração">Mineração</option>
+                        <option value="oceanos">Oceanos</option>
+                        <option value="povos">Povos</option>
+                        <option value="energia">Energia</option>
+                        <option value="clima">Clima</option>
+                        <option value="cidade">Cidade</option>
+                        <option value="fauna">Fauna</option>
+                        <option value="biodiversidade">Biodiversidade</option>
+                        <option value="floresta">Florestas</option>
+                        <option value="expedicao">Expedição</option>
+                        <option value="garimpo">Garimpo</option>
+                    </select>
+                </div>    
             </div>
-
                 <button class="btn-filter">Aplicar Filtros</button>
         </section>
 
-        <section>
+        <section class="content">
             <div class="content1">
                 <div class="img-content">
                     <img src="/site/img/soja.jpg" alt="Foto de soja">
                 </div>
-                <span>Nature</span>
-                <h1>Brasil sofre impactos da guerra no Oriente Médio</h1>
-                <p>Do gás de cozinha ao óleo de soja, famílias brasileiras tendem a sentir no bolso os efeitos dos conflitos com alta nos combustíveis e alimentos</p>
+                <div class="content-group">
+                    <span>Nature</span>
+                    <h1>Brasil sofre impactos da guerra no Oriente Médio</h1>
+                    <p>Do gás de cozinha ao óleo de soja, famílias brasileiras tendem a sentir no bolso os efeitos dos conflitos com alta nos combustíveis e alimentos</p>
+                    <button class="btn btn-cta">Saiba mais</button>
+                </div>
             </div>
 
             <div class="content1">
                 <div class="img-content">
                     <img src="/site/img/petrolio.jpg" alt="Foto de petrólio">
                 </div>
-                <span>Inspire Ativismo</span>
-                <h1>Petróleo na Amazônia e a disputa de narrativas sobre desenvolvimento e clima</h1>
-                <p>Entrevista com a pesquisadora Marina Kuzuyabu analisa como narrativas sobre desenvolvimento e segurança energética influenciam o debate sobre petróleo na Foz do Amazonas.</p>
+                    <div class="content-group">
+                        <span>Inspire Ativismo</span>
+                        <h1>Narrativas sobre o Petróleo na Amazônia</h1>
+                        <p>Entrevista com a pesquisadora Marina Kuzuyabu analisa como narrativas sobre desenvolvimento e segurança energética influenciam o debate sobre petróleo na Foz do Amazonas.</p>
+                        <button class="btn btn-cta">Saiba mais</button>
+                    </div>
             </div>
 
             <div class="content1">
                 <div class="img-content">
                     <img src="/site/img/america.jpg" alt="América do Sul">
                 </div>
-                <span>Amazônia</span>
-                <h1>Super El Niño em 2026: o que esperar e porque precisamos nos preparar</h1>
-                <p>O El Niño de 2026 pode ser o mais intenso em décadas. Entenda o que é, o que as previsões indicam e quais impactos esperar no Brasil em secas, enchentes e ondas de calor.</p>
+                <div class="content-group">
+                    <span>Amazônia</span>
+                    <h1>Super El Niño em 2026: o que esperar e porque precisamos nos preparar</h1>
+                    <p>O El Niño de 2026 pode ser o mais intenso em décadas. Entenda o que é, o que as previsões indicam e quais impactos esperar no Brasil em secas, enchentes e ondas de calor.</p>
+                    <button class="btn btn-cta">Saiba mais</button>
+                </div>
             </div>
 
             <div class="content1">
                 <div class="img-content">
                     <img src="/site/img/mc.jpg" alt="Foto do mc.jon">
                 </div>
-                <span>Povos e territórios</span>
-                <h1>Jon da Rima: MC do Pará que faz do freestyle um ato de justiça climática</h1>
-                <p>Entre barcos e ônibus, MC denuncia racismo ambiental e crise climática nas periferias e mostra como o Hip Hop amazônico ocupa esse front </p>
+                <div class="content-group">
+                    <span>Povos e territórios</span>
+                    <h1>Jon da Rima: O MC da Justiça Climática</h1>
+                    <p>Entre barcos e ônibus, MC denuncia racismo ambiental e crise climática nas periferias e mostra como o Hip Hop amazônico ocupa esse front </p>
+                    <button class="btn btn-cta">Saiba mais</button>
+                </div>
             </div>
 
             <div class="content1">
                 <div class="img-content">
                     <img src="/site/img/floresta.jpg" alt=" Foto do floresta amazônica">
                 </div>
-                <span>Amazônia</span>
-                <h1>Petróleo na Amazônia e a disputa de narrativas sobre desenvolvimento e clima</h1>
-                <p>Relatório mostra como Permissões de Lavra Garimpeira (PLGs) são utilizadas para a comercialização de ouro extraído ilegalmente da Amazônia, impactando Terras Indígenas e áreas protegidas;</p>
+                <div class="content-group">
+                    <span>Amazônia</span>
+                    <h1>Petróleo na Amazônia: Desenvolvimento vs. Clima</h1>            
+                     <p>Relatório mostra como Permissões de Lavra Garimpeira (PLGs) são utilizadas para a comercialização de ouro extraído ilegalmente da Amazônia, impactando Terras Indígenas e áreas protegidas;</p>
+                    <button class="btn btn-cta">Saiba mais</button>
+                </div>
             </div>
 
             <div class="content1">
                 <div class="img-content">
                     <img src="/site/img/submarino.jpg" alt="Foto do submarino">
                 </div>
-                <span>Oceanos</span>
-                <h1>O que um “teste” de mineração em águas profundas faz com a vida marinha</h1>
-                <p>Estudo da Nature Ecology & Evolution aponta redução da vida marinha após teste de mineração em águas profundas.</p>
+                <div class="content-group">
+                    <span>Oceanos</span>
+                    <h1>Impacto dos Testes de Mineração Marinha</h1>
+                    <p>Estudo da Nature Ecology & Evolution aponta redução da vida marinha após teste de mineração em águas profundas.</p>
+                    <button class="btn btn-cta">Saiba mais</button>
+                </div>
             </div>
 
         </section>

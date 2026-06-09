@@ -7,8 +7,10 @@
   --bege:#FDFBF0;
   --amarelo: #ffde00;
   --amarelo-hover:#e5c700;
-
+  --cinza-fundo: #dfd8d8;
+    
 }
+
 *{
  margin: 0;
  padding: 0;
@@ -18,17 +20,11 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: var(--cinza-fundo);
     margin: 0;
     padding: 0;
 }
 
 /*------------- HEADER ------------- */
-
-
-
-
-
 
 header{
     width: 100%;
