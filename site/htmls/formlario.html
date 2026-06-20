@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="time-e-formulario.css">
+    <title>Formulário de Jogador</title>
+</head>
+<body>
+    <main class=" container-formulario">
+        <section class="painel-formulario">
+            <div class="titulo-formulario">
+                <span class="canto-unimarfc">Unimar FC</span>
+                <h1>Formulário de Inscrição</h1>
+                <p>Preencha os dados abaixo para participar da seleção do time.</p>
+            </div>
+
+            <form class="formulario-grupo">
+                <section class="bloco-formulario">
+                        <div class="cabecalho-bloco">
+                            <h2>Informações Pessoais</h2>
+                            <p>Se apresente para a equipe com seus dados principais.</p>
+                        </div>
+
+                        <div class="grade-dupla">
+                            <div class="formulario-individual">
+                                <label for="nome">Digite seu nome completo:</label>
+                                <input type="text" id="nome" name="nome" placeholder="João Ricardo da Silva" required>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="idade">Digite sua idade:</label>
+                                <input type="number" id="idade" name="idade" placeholder="25" required>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="cidade_estado">Digite sua cidade e estado:</label>
+                                <input type="text" id="cidade_estado" name="cidade_estado" placeholder="São Paulo(SP)" required>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="ea_id">Digite seu EA ID/PSN/Xbox:</label>
+                                <input type="text" id="ea_id" name="ea_id" placeholder="João Ricardo da Silva" required>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="plataforma">Selecione sua plataforma:</label>
+                                <select id="plataforma" name="plataforma" required>
+                                    <option value="" selected disabled>Escolha uma opção</option>
+                                    <option value="psn">PlayStation Network (PSN)</option>
+                                    <option value="xbox">Xbox Live</option>
+                                    <option value="pc">EA ID</option>
+                                </select>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="bloco-formulario">
+                        <div class="cabecalho-bloco">
+                            <h2>Perfil do Jogador</h2>
+                            <p>Mostre sua função dentro do jogo e o seu estilo.</p>
+                        </div>
+
+                        <div class="grade-formulario grade-dupla">
+                            <div class="formulario-individual">
+                                <label for="posicao-principal">Selecione sua posição:</label>
+                                <select id="posicao-principal" name="posicao-principal" required>
+                                    <option value="" selected disabled>Escolha uma posição</option>
+                                    <option value="atacante">ATA</option>
+                                    <option value="ponta-direita">PD</option>
+                                    <option value="ponta-esquerda">PE</option>
+                                    <option value="meio-campo">MEI</option>
+                                    <option value="meio-central">MC</option>
+                                    <option value="meia-direita">MD</option>
+                                    <option value="meia-esquerda">ME</option>
+                                    <option value="volante">VOL</option>
+                                    <option value="defensor">DEF</option>
+                                    <option value="lateral-esquerdo">LE</option>
+                                    <option value="lateral-direito">LD</option>
+                                    <option value="goleiro">GOL</option>
+                                </select>
+                         </div>
+
+                            <div class="formulario-individual">
+                                <label for="posicao-secundaria">Selecione sua posição secundária:</label>
+                                <select id="posicao-secundaria" name="posicao-secundaria" required>
+                                    <option value="" selected disabled>Escolha uma posição</option>
+                                    <option value="atacante">ATA</option>
+                                    <option value="ponta-direita">PD</option>
+                                    <option value="ponta-esquerda">PE</option>
+                                    <option value="meio-campo">MEI</option>
+                                    <option value="meio-central">MC</option>
+                                    <option value="meia-direita">MD</option>
+                                    <option value="meia-esquerda">ME</option>
+                                    <option value="volante">VOL</option>
+                                    <option value="defensor">DEF</option>
+                                    <option value="lateral-esquerdo">LE</option>
+                                    <option value="lateral-direito">LD</option>
+                                    <option value="goleiro">GOL</option>
+                                </select>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="overall">Digite seu overall:</label>
+                                <input type="number" id="overall" name="overall" placeholder="85" required>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="estilodejogo">Digite seu estilo de jogo:</label>
+                                <input type="text" id="estilodejogo" name="estilodejogo" placeholder="ofensivo, defensivo" required>
+                            </div>
+                        </div>
+                 </section>
+
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Experiência</h2>
+                        <p>Conte seu histórico competitivo e tempo de prática.</p>
+                    </div>
+
+                        <div class="grade-formulario grade-tripla">
+                                    <div class="formulario-individual">
+                                <label for="time-clube">Já jogou em algum time/clube?</label>
+                                <select id="time-clube" name="time-clube" required>
+                                    <option value="" selected disabled>Escolha uma opção</option>
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="tempojogo">Digite seu tempo de jogo:</label>
+                                <input type="number" id="tempojogo" name="tempojogo" placeholder="5 anos" required>
+                            </div>
+
+                            <div class="formulario-individual">
+                                <label for="campeonato">Já participou de Campeonato?</label>
+                                <select id="campeonato" name="campeonato" required>
+                                    <option value="" selected disabled>Escolha uma opção</option>
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Comunicação</h2>
+                        <p>Informe como você interage com o time durante as partidas.</p>
+                    </div>
+
+                    <div class="grade-tripla">
+                        <div class="formulario-individual">
+                            <label for="discord">Possui discord?</label>
+                            <select id="discord" name="discord" required>
+                                <option value="" selected disabled>Escolha uma opção</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+
+                        <div class="formulario-individual">
+                            <label for="discord-usuario">Digite seu nome de Usuário do discord:</label>
+                            <input type="text" id="discord-usuario" name="discord-usuario" placeholder="SeuUsuario#12340" required>
+                        </div>
+
+                        <div class="formulario-individual">
+                            <label for="microfone">Possui microfone?</label>
+                            <select id="microfone" name="microfone" required>
+                                <option value="" selected disabled>Escolha uma opção</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Comprometimento</h2>
+                        <p>Queremos entender sua postura dentro de um elenco competitivo.</p>
+                    </div>
+
+                    <div class="grade-dupla">
+                        <div class="formulario-individual">
+                            <label for="taticas">Você está disposto a jogar em equipe e seguir táticas?</label>
+                            <select id="taticas" name="taticas" required>
+                                <option value="" selected disabled>Escolha uma opção</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+
+                        <div class="formulario-individual">
+                            <label for="criticas">Aceita críticas e busca melhorar?</label>
+                            <select id="criticas" name="criticas" required>
+                                <option value="" selected disabled>Escolha uma opção</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+
+                        <div class="formulario-individual campo-amplo">
+                            <label for="motivacao">Por que quer entrar no Unimar FC?</label>
+                            <textarea id="motivacao" name="motivacao" placeholder="Escreva sua motivação para entrar no time..." required></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <div class=" botao-formulario">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
