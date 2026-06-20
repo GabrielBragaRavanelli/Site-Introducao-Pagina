@@ -1,4 +1,4 @@
-// Carrossel - Controle de Slides
+
 let currentSlideIndex = 0;
 const slides = document.querySelectorAll(".carrossel-slide");
 const indicators = document.querySelectorAll(".indicadores");
