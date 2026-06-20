@@ -33,7 +33,7 @@ header{
     align-items: center;
     padding: 15px;
     background-color: var(--verde-agua);
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
 .icone a{
@@ -57,7 +57,6 @@ header ul{
     margin-bottom: 0;
     
 }
-
 
 .link{
     text-decoration: none;
@@ -90,6 +89,29 @@ header ul{
   border: 2px solid transparent; 
 }
 
+.btn-header {
+    background: var(--branco-header-footer);
+    border: 1px solid var(--preto-main-fundo) !important;
+    color: var(--verde-agua);
+    padding: 15px 20px !important;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    display: block;
+}
+
+.btn-header:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+}
+
+.btn-header a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
 .button-group button a {
   text-decoration: none;
@@ -135,11 +157,193 @@ header ul{
     background: var(--verde-agua);
     color: var(--branco-header-footer);
 }
-/*--
+
 /*
 <div class="icone">
            <a href="index.html"><i class="fa-solid fa-earth-americas"></i></a> 
         </div>
+
+/* ============= CARROSSEL ============= */
+
+.carrossel-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.carrossel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.carrossel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.carrossel-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Fundo da imagem do slide */
+.slide-planodefundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slide-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobreposição escura para melhor legibilidade do texto */
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* Conteúdo do texto do slide */
+.slide-content {
+    position: relative;
+    z-index: 3;
+    padding-left: 650px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-texto {
+    max-width: 600px;
+}
+
+.slide-texto h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+}
+
+.slide-texto p {
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    color: var(--branco-header-footer);
+}
+
+.botao-carrossel {
+    background-color: var(--amarelo);
+    color: var(--preto-main-fundo);
+    padding: 32px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.botao-carrossel:hover {
+    background-color: var(--amarelo-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões de navegação  padding:32px 40px;*/
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--branco-header-footer);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    font-size: 32px;
+    padding: 16px 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+    left: 30px;
+}
+
+.carousel-btn-next {
+    right: 30px;
+}
+
+/* Indicadores (pontinhos) */
+.carrossel-indicadores {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+}
+
+.indicadores {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicadores:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.indicadores.active {
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    width: 40px;
+    border-radius: 8px;
+}
 
 /*------------- MAIN/HERO ------------- */
 main {
@@ -150,12 +354,12 @@ main {
   max-width: 1200px; 
   width: 100%;       
   margin: 0 auto;
-
 }
 
 h1 {
     margin-bottom: 40px;
     font-size: 2.5rem;
+    margin-top: 40px;
 }
 
 .container > h1 {
@@ -350,6 +554,8 @@ p {
 
 .btn-final:hover {
     background-color: var(--amarelo-hover); 
+    transform: translateY(-3px);
+    color: var(--preto-main-fundo);
 }
 
 .btn-final a{
@@ -470,3 +676,4 @@ footer{
 .fa-linkedin {
     color: #0A66C2;
 }
+
