@@ -9,34 +9,99 @@
     <title>Página Inicial</title>
 </head>
 <body>
-    <header>
-        <div class="icone">
-           <a href="index.html"><i class="fa-solid fa-earth-americas"></i></a> 
-        </div>
-        <div class="cabecalho">
-            <div class="header1">
-                <ul class="header-group">
-                    <li><a href="Informe-se.html" target="_blank" class="link">Informe-se</a></li>
-                    <li><a href="#" class="link">Como ajudar</a></li>
-                    <li><a href="Noticias.html" class="link">Notícias e Histórias</a></li>
-                    <li><a href="#" class="link">Sobre nós</a></li>
-                </ul>
-            </div>
 
-            <div class="header2">
-                <div class="button-group">
-                    <div class="botao1">
-                        <button type="button" class="btn btn-header"><a href="login.html " target="_blank">Login</a></button>
-                    </div>
-                    <div class="botao2">
-                        <button type="button" class="btn btn-header"><a href="register.html" target="_blank">Registre-se</a></button>
+    <section class="carrossel-section">
+        <header>
+            <div class="icone">
+                <a href="index.html"><i class="fa-solid fa-earth-americas"></i></a>
+            </div>
+            <div class="cabecalho">
+                <div class="header1">
+                    <ul class="header-group">
+                        <li><a href="Informe-se.html" target="_blank" class="link">Informe-se</a></li>
+                        <li><a href="#" class="link">Como ajudar</a></li>
+                        <li><a href="Noticias.html" class="link">Notícias e Histórias</a></li>
+                        <li><a href="#" class="link">Sobre nós</a></li>
+                    </ul>
+                </div>
+                
+                <div class="header2">
+                    <div class="button-group">
+                        <div class="botao1">
+                            <button type="button" class="btn btn-header"><a href="login.html" target="_blank">Login</a></button>
+                        </div>
+                        <div class="botao2">
+                            <button type="button" class="btn btn-header"><a href="register.html" target="_blank">Registre-se</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </header>
+
+
+        <div class="carrossel-container">
+            <div class="carrossel-wrapper"> 
+                <div class="carrossel-slide active">
+                    <div class="slide-planodefundo">
+                        <img src="../img/bone.jpg" alt="Boné Leave me Alone" class="slide-bg-img">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-texto">
+                            <h2>Doe e ganhe um boné exclusivo!</h2>
+                            <p>Faça sua doação e ganhe o boné usado pelos nossos ativistas na visita do navio do Nature ao Brasil!</p>
+                            <button class="botao-carrossel">Doe agora!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carrossel-slide">
+                    <div class="slide-planodefundo">
+                        <img src="../img/oceano.jpg" alt="Oceano" class="slide-bg-img">
+                        <div class="slide-overlay"></div>
+                    </div>
+
+                    <div class="slide-content">
+                        <div class="slide-texto">
+                            <h2>Proteja nossos oceanos!</h2>
+                            <p>Cada ação conta na preservação da vida marinha. Juntos podemos fazer a diferença contra a poluição dos mares.</p>
+                            <button class="botao-carrossel">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carrossel-slide">
+                    <div class="slide-planodefundo">
+                        <img src="../img/site.jpg" alt="Estrutura de Site" class="slide-bg-img">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    
+                    <div class="slide-content">
+                        <div class="slide-texto">
+                            <h2>Visite nosso site!</h2>
+                            <p>Conheça mais sobre as campanhas do Nature e como você pode contribuir para um planeta mais sustentável.</p>
+                            <button class="botao-carrossel">Conheça mais</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn carousel-btn-prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carrossel-indicadores">
+                <button class="indicadores active" onclick="currentSlide(0)"></button>
+                <button class="indicadores" onclick="currentSlide(1)"></button>
+                <button class="indicadores" onclick="currentSlide(2)"></button>
+            </div>
         </div>
-    </header>
-
-
+    </section>
+    
     <main class="container">
         <h1>Últimas notícias</h1>
 
@@ -198,5 +263,6 @@
         <p class="pfinal">Nature Brasil - CNPJ 64.711.062/0001-94 - é uma Associação civil sem fins lucrativos que goza de isenção com relação aos tributos federais devidos sobre suas receitas próprias</p>
 </footer>
 
+    <script src="../js/carrosel.js"></script>
 </body>
 </html>
