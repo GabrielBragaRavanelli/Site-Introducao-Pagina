@@ -3,6 +3,13 @@
 
 /*-----------formulário------------*/
 :root {
+	--preto-main-fundo: #000000;
+ 	--branco-header-footer: #ffffff;
+  	--verde-agua:#235347;
+ 	--bege:#FDFBF0;
+  	--amarelo: #ffde00;
+  	--amarelo-hover:#e5c700;
+  	--cinza-fundo: #dfd8d8;
 	--bg-top: #eef7f7;
 	--bg-bottom: #d7eceb;
 	--card: rgba(255, 255, 255, 0.92);
@@ -24,11 +31,7 @@
 body {
 	min-height: 100vh;
 	font-family: 'poppins', sans-serif;
-	color: var(--text);
-	background:
-		radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), transparent 28%),
-		radial-gradient(circle at bottom right, rgba(16, 148, 131, 0.12), transparent 26%),
-		linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+	background: url("../img/time-forest.jpg") center / cover fixed no-repeat;
 }
 
 img {
@@ -60,7 +63,7 @@ textarea {
 	padding: 52px;
 	border: 1px solid var(--card-border);
 	border-radius: 32px;
-	background: var(--card);
+	background: var(--branco-header-footer);
 	box-shadow: var(--shadow);
 	backdrop-filter: blur(10px);
 }
@@ -88,6 +91,7 @@ textarea {
 	line-height: 1.05;
 	font-weight: 800;
 	margin-bottom: 12px;
+	color: var(--verde-agua);
 }
 
 .titulo-formulario p {
@@ -200,8 +204,8 @@ textarea {
 	min-height: 78px;
 	border: none;
 	border-radius: 20px;
-	background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-	color: #fff;
+	background-color: var(--amarelo);
+	color: var(--preto-main-fundo);
 	font-size: 1.2rem;
 	font-weight: 800;
 	letter-spacing: 0.04em;
@@ -214,6 +218,8 @@ textarea {
 .botao-formulario button:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 22px 42px rgba(11, 114, 101, 0.34);
+	color: var(--preto-main-fundo);
+	background-color: var(--amarelo-hover);
 }
 
 .botao-formulario button:active {
@@ -231,10 +237,7 @@ textarea {
 	}
 }
 
-@media (max-width: 680px) {
-	.container-formulario {
-		padding: 22px 14px 34px;
-	}
+
 
 	.painel-formulario {
 		padding: 22px;
@@ -257,8 +260,12 @@ textarea {
 	.formulario-individual textarea {
 		min-height: 180px;
 	}
-}
 
+	@media (max-width: 680px) {
+	.container-formulario {
+		padding: 22px 14px 34px;
+	}
+}
 /*---------------------------PÁGINA INICIAL---------------------------*/
 .home-page,
 .Pagina-inicial {
@@ -266,7 +273,6 @@ textarea {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
 	color: #ffffff;
 	background:
 		linear-gradient(180deg, rgba(10, 10, 10, 0.68) 0%, rgba(8, 8, 8, 0.8) 55%, rgba(6, 6, 6, 0.9) 100%),
@@ -336,7 +342,6 @@ textarea {
 }
 
 .marca-time {
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 	font-size: clamp(2.2rem, 2.2vw, 2.8rem);
 	letter-spacing: 0.02em;
@@ -407,7 +412,6 @@ textarea {
 }
 
 .titulo-principal {
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 	font-size: clamp(3rem, 10vw, 5.5rem);
 	line-height: 0.98;
