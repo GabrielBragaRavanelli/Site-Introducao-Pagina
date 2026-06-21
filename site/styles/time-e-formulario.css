@@ -270,7 +270,7 @@ textarea {
 	color: #ffffff;
 	background:
 		linear-gradient(180deg, rgba(10, 10, 10, 0.68) 0%, rgba(8, 8, 8, 0.8) 55%, rgba(6, 6, 6, 0.9) 100%),
-		url("img/thumb-1920-584541.jpg") center / cover fixed no-repeat;
+		url("../img/time-forest.jpg") center / cover fixed no-repeat;
 }
 
 .home-wrapper,
