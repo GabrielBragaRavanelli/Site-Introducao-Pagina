@@ -31,7 +31,7 @@
 body {
 	min-height: 100vh;
 	font-family: 'poppins', sans-serif;
-	background: url("../img/time-forest.jpg") center / cover fixed no-repeat;
+	background: url("../img/green-comemoracao.vif.avif") center / cover fixed no-repeat;
 }
 
 img {
@@ -40,7 +40,7 @@ img {
 }
 
 a {
-	color: inherit;
+	color: var(--verde-agua);
 	text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ textarea {
 	max-width: 760px;
 	font-size: clamp(1.15rem, 1.9vw, 1.5rem);
 	line-height: 1.6;
-	color: var(--muted);
+	color: var(--preto-main-fundo);
 }
 
 .formulario-grupo {
@@ -123,7 +123,7 @@ textarea {
 .cabecalho-bloco p {
 	font-size: 1.05rem;
 	line-height: 1.6;
-	color: var(--muted);
+	color: var(--preto-main-fundo);
 }
 
 .grade-formulario,
@@ -238,7 +238,6 @@ textarea {
 }
 
 
-
 	.painel-formulario {
 		padding: 22px;
 		border-radius: 24px;
@@ -276,7 +275,7 @@ textarea {
 	color: #ffffff;
 	background:
 		linear-gradient(180deg, rgba(10, 10, 10, 0.68) 0%, rgba(8, 8, 8, 0.8) 55%, rgba(6, 6, 6, 0.9) 100%),
-		url("../img/time-forest.jpg") center / cover fixed no-repeat;
+		url("../img/football_team_green.webp") center / cover fixed no-repeat;
 }
 
 .home-wrapper,
@@ -342,11 +341,11 @@ textarea {
 }
 
 .marca-time {
-	font-weight: 800;
 	font-size: clamp(2.2rem, 2.2vw, 2.8rem);
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: var(--branco-header-footer);
+	font-weight: bold;
 }
 
 .menu-site {
@@ -372,7 +371,7 @@ textarea {
 	width: 100%;
 	height: 3px;
 	border-radius: 999px;
-	background: #ef1f28;
+	background: var(--amarelo);
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: transform 0.2s ease;
@@ -419,6 +418,7 @@ textarea {
 	margin-bottom: 8px;
 	text-transform: uppercase;
 	text-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+	margin-top: 100px;
 }
 
 .subtitulo-principal {
@@ -427,6 +427,7 @@ textarea {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	margin-bottom: 8px;
+	margin-top: 65px;
 }
 
 .slogan-principal {
@@ -436,6 +437,7 @@ textarea {
 	color: #f9c353;
 	margin-bottom: 28px;
 	text-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+	margin-top: 20px;
 }
 
 .cta-time,
@@ -452,7 +454,7 @@ textarea {
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: #000000;
-	background: #ffffff;
+	background-color: var(--amarelo);
 	box-shadow: 0 14px 22px rgba(0, 0, 0, 0.28);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -461,6 +463,8 @@ textarea {
 .formulario-time:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 18px 26px rgba(0, 0, 0, 0.35);
+	color: var(--preto-main-fundo);
+	background-color: var(--amarelo-hover);
 }
 
 .sobre-nos-home,
@@ -474,7 +478,7 @@ textarea {
 	font-weight: 800;
 	font-size: 1.4rem;
 	letter-spacing: 0.2em;
-	color: #ed1f27;
+	color: var(--amarelo);
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
@@ -492,7 +496,8 @@ textarea {
 	margin: 0 auto 34px;
 	font-size: clamp(1.3rem, 2.3vw, 2rem);
 	line-height: 1.45;
-	color: rgba(244, 244, 244, 0.96);
+	color: var(--branco-header-footer);
+	font-weight: bold;
 }
 
 .cards-home {
@@ -533,8 +538,8 @@ textarea {
 	margin-bottom: 14px;
 	border-radius: 999px;
 	font-size: 1.9rem;
-	background: radial-gradient(circle at 30% 20%, #ff4952, #d50d16);
-	box-shadow: 0 8px 16px rgba(167, 9, 18, 0.45);
+	background: radial-gradient(circle at 30% 20%, #ffde00, #ffde00);
+	color: var(--preto-main-fundo);
 }
 
 .card-home h3 {
@@ -591,7 +596,7 @@ textarea {
 	font-size: clamp(1rem, 1.8vw, 1.3rem);
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: var(--amarelo);
 }
 
 .rodape-home {

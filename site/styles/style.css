@@ -204,7 +204,7 @@ header ul{
     z-index: 2;
 }
 
-/* Fundo da imagem do slide */
+
 .slide-planodefundo {
     position: absolute;
     top: 0;
@@ -220,7 +220,7 @@ header ul{
     object-fit: cover;
 }
 
-/* Sobreposição escura para melhor legibilidade do texto */
+
 .slide-overlay {
     position: absolute;
     top: 0;
@@ -231,7 +231,6 @@ header ul{
     z-index: 0;
 }
 
-/* Conteúdo do texto do slide */
 .slide-content {
     position: relative;
     z-index: 3;
