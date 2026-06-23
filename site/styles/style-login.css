@@ -23,6 +23,16 @@ body{
   --amarelo: #ffde00;
   --amarelo-hover:#e5c700;
   --cinza-fundo: #dfd8d8;
+  --bg-top: #eef7f7;
+  --bg-bottom: #d7eceb;
+  --card: rgba(255, 255, 255, 0.92);
+  --card-border: rgba(34, 96, 93, 0.12);
+  --text: #183534;
+  --muted: #5f7775; 
+  --accent: #109483;
+  --accent-dark: #0b7265;
+  --field: #f8fcfb;
+  --shadow: 0 24px 80px rgba(16, 74, 70, 0.14);
 
 }
 
