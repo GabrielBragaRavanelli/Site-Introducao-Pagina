@@ -141,7 +141,50 @@ header ul{
     background: var(--verde-agua);
     color: var(--branco-header-footer);
 }
+
+
 /*------------- Main ------------- */
+.card-retangular {
+    background-color: var(--card);
+    border-radius: 18px;
+    padding: 40px 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.card-retangular h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.card-retangular p {
+    margin: 0 auto 20px;
+    max-width: 850px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.card-retangular button {
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.card-retangular button:hover {
+    background-color: var(--amarelo-hover);
+    transform: translateY(-2px);
+}
 /*------------- Footer ------------- */
 
 footer{
