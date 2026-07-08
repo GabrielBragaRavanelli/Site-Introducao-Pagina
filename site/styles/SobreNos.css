@@ -194,6 +194,14 @@ p {
     font-size: 16px;
     line-height: 1.6;
     color: var(--preto-main-fundo);
+    
+}
+
+.content-group1 p{
+    margin-bottom: 25px;
+}
+
+.content-group2 p{
     margin-bottom: 25px;
 }
 
@@ -423,7 +431,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/balao.jpg');
+    background-image: url('../img/onça\ pintada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -494,9 +502,6 @@ h1 {
     
 }
 
-
-
-
 /*------------- Footer ------------- */
 
 footer{
@@ -526,6 +531,7 @@ footer{
 
 .colunas p{
     font-weight: 500;
+    color: var(--branco-header-footer);
 }
 
 .social1{
