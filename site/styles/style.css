@@ -85,8 +85,7 @@ header ul{
 
 .button-group {
   display: flex;
-  gap: 50px;
-  padding-right: 60px;        
+  gap: 50px;    
 }
 
 .button-group button {
@@ -683,5 +682,180 @@ footer{
 
 .fa-linkedin {
     color: #0A66C2;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .icone {
+        margin-left: 0;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header ul {
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .button-group {
+        gap: 20px;
+    }
+
+    .carrossel-container {
+        height: 60vh;
+    }
+
+    .slide-content {
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slide-texto h2 {
+        font-size: 2.8rem;
+        white-space: normal;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .columns1, .columns2, .columns3, .columns4 {
+        width: 48%;
+        flex: 0 0 48%;
+    }
+
+    .content-final-columns {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .group-coluna {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .colunas {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    header ul {
+        font-size: 18px;
+        gap: 14px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .btn-header {
+        width: 100%;
+    }
+
+    .carrossel-container {
+        height: 50vh;
+    }
+
+    .slide-texto h2 {
+        font-size: 2.2rem;
+    }
+
+    .slide-texto p {
+        font-size: 18px;
+    }
+
+    .columns1, .columns2, .columns3, .columns4 {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .content-final-columns {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .group-coluna {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colunas {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social1 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 12px;
+    }
+
+    header ul {
+        font-size: 16px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .carrossel-container {
+        height: 45vh;
+    }
+
+    .slide-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .slide-texto p {
+        font-size: 16px;
+    }
+
+    .botao-carrossel {
+        padding: 16px 24px;
+    }
+
+    .container > h1,
+    .content h1,
+    .content-final h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .hero,
+    .content {
+        padding: 0 16px;
+    }
+
+    .btn-final {
+        width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+
+    .group-coluna {
+        padding: 0 16px;
+    }
 }
 

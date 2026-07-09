@@ -310,6 +310,126 @@ footer{
     color: #0A66C2;
 }
 
+@media (max-width: 1024px) {
+    .header-login ul {
+        gap: 40px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .titulo-central {
+        margin-top: 4rem;
+    }
+
+    .main {
+        margin-bottom: 200px;
+    }
+
+    .group-coluna {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .colunas {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-login ul {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .header-group-login i {
+        font-size: 48px;
+        padding: 20px;
+    }
+
+    .titulo-central {
+        font-size: large;
+        margin-top: 3rem;
+    }
+
+    .main {
+        max-width: 90%;
+        padding: 1.5rem;
+        margin-bottom: 140px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .group-coluna {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colunas {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social1 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-login ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-left: 0;
+    }
+
+    .header-group-login i {
+        font-size: 40px;
+        padding: 12px;
+    }
+
+    .titulo-central {
+        font-size: medium;
+        margin-top: 2rem;
+    }
+
+    .main {
+        max-width: 95%;
+        padding: 1rem;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    form h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 18px 45px 18px 16px;
+    }
+
+    .remember-forgot {
+        font-size: 14px;
+    }
+
+    .login {
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .register-link {
+        font-size: 14px;
+    }
+}
+
 
 
 
