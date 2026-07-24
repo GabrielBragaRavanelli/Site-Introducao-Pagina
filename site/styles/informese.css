@@ -512,7 +512,6 @@ img {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 10px;
     width: 100%;
     max-width: 400px;
 }
@@ -520,13 +519,16 @@ img {
 .botao-cadastrar button:hover{
     background-color: var(--amarelo-hover);
     transform: translateY(-2px);
+    color: var(--preto-main-fundo);
+    border-radius: 5px;
 }
 
-.botao-cadastrar button:a{
-    color: var(--amarelo);
-    font-weight: bold;
-    
+.botao-cadastrar a{
+    color: var(--preto-main-fundo);
+    text-decoration: none;
 }
+
+
 
 /*------------- Footer ------------- */
 

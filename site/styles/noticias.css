@@ -295,7 +295,6 @@ footer{
     color: var(--branco-header-footer);
     padding-top: 50px;
     border-top: 2px solid var(--preto-main-fundo);
-    border-radius: 15px;
     box-shadow: 0 2px 5px ;
    
 }
