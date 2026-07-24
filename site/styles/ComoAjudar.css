@@ -299,6 +299,7 @@ p {
     margin-top: 10px;
     width: 100%;
     max-width: 400px;
+    margin: 0 380px;
 }
 
 .btn-final:hover {
@@ -306,7 +307,6 @@ p {
     background-color: var(--amarelo-hover);
     transform: translateY(-2px);
 }
-   
 
 .btn-final a{
     text-decoration: none;

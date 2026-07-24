@@ -345,7 +345,7 @@ p {
     margin-top: 20px;
     padding-left: 20px;
     line-height: 1.8;
-    color: var(--text);
+    color: var(--preto-main-fundo);
 }
 
 .Lista .lista1 li {
@@ -354,7 +354,7 @@ p {
 }
 
 .Lista .lista2 p {
-    color: var(--text);
+    color: var(--preto-main-fundo);
     line-height: 1.8;
     margin-bottom: 16px;
 }
