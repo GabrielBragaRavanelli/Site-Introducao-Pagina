@@ -274,10 +274,10 @@ header ul{
 .botao-carrossel {
     background-color: var(--amarelo);
     color: var(--preto-main-fundo);
-    padding: 32px 40px;
+    padding: 20px 20px;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
