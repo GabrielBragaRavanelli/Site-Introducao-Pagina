@@ -149,11 +149,61 @@ header ul{
 /*-----Main-----*/
 
 .pagina-registrese {
-  min-height: 100vh;
   padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-registrese{
+  width: 100%;
+  /*
+  max-width: 1200px;
+  */
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  background-color: var(--branco-header-footer);
+  border-radius: 16px;
+  overflow: hidden;
+  /*
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  */
+}
+
+.imagem-lateral {
+    /*
+  background: linear-gradient(180deg,#f5f9ed 0%,#edf5e5 100%);
+  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-cadastro h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo-cadastro span {
+  display: block;
+  margin-top: 3px;
+  font-size: 18px;
+  color: var(--preto-main-fundo);
+}
+
+.imagem-lateral h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--preto-main-fundo);
+}
+
+.imagem-lateral p {
+  max-width: 230px;
+  font-size: 18px;
+  line-height: 1.6;
+ color: var(--preto-main-fundo);
 }
 
 
@@ -164,7 +214,6 @@ footer{
     color: var(--branco-header-footer);
     padding-top: 50px;
     border-top: 2px solid var(--preto-main-fundo);
-    border-radius: 15px;
     box-shadow: 0 2px 5px ;
    
 }
