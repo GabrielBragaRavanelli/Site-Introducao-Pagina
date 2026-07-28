@@ -206,6 +206,29 @@ header ul{
  color: var(--preto-main-fundo);
 }
 
+.form-cadastro {
+ background-color: var(--branco-header-footer);
+ width: min(100%,1280px);
+ margin: 0 auto;
+
+}
+
+
+
+
+
+/*
+.form-cadastro a {
+  color: #19723c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-cadastro a:hover {
+  text-decoration: underline;
+}
+*/
+
 
 /*-----Footer-----*/
 
