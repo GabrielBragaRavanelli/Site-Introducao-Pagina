@@ -217,6 +217,25 @@ header ul{
 
 
 
+
+
+
+
+
+.requisitos-senha {
+  display: none;
+  margin-top: 12px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.requisitos-senha.ativo {
+  display: block;
+}
+
+
+
+
 /*-----Footer-----*/
 
 footer{
