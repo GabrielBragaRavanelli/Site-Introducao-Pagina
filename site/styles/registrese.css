@@ -210,24 +210,30 @@ header ul{
  background-color: var(--branco-header-footer);
  width: min(100%,1280px);
  margin: 0 auto;
-
 }
 
 
 
 
 
-/*
-.form-cadastro a {
-  color: #19723c;
-  font-weight: bold;
-  text-decoration: none;
+
+
+
+
+
+
+.requisitos-senha {
+  display: none;
+  margin-top: 12px;
+  padding-left: 20px;
+  font-size: 13px;
 }
 
-.form-cadastro a:hover {
-  text-decoration: underline;
+.requisitos-senha.ativo {
+  display: block;
 }
-*/
+
+
 
 
 /*-----Footer-----*/

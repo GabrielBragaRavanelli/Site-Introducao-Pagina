@@ -81,7 +81,15 @@
 
                     <div class="campo">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" minlength="6" required>
+                        <input type="password" id="senha" name="senha" minlength="6" required>
+                         <ul class="requisitos-senha" id="requisitos-senha">
+                            <li id="regra-tamanho">Pelo menos 8 caracteres</li>
+                            <li id="regra-maiuscula">Uma letra maiúscula</li>
+                            <li id="regra-minuscula">Uma letra minúscula</li>
+                            <li id="regra-numero">Um número</li>
+                            <li id="regra-especial">Um caractere especial</li>
+                            <li id="regra-sequencia">Não conter sequências óbvias</li>
+                        </ul>
                     </div>
 
                     <div class="campo">
@@ -91,7 +99,6 @@
 
                     <div class="campo">
                         <label for="sexo">Sexo</label>
-
                         <select id="sexo" required>
                             <option value="">Selecione</option>
                             <option value="masculino">Masculino</option>
@@ -103,7 +110,6 @@
 
                     <div class="campo">
                         <label for="estado">Estado</label>
-
                         <select id="estado" required>
                             <option value="">Selecione seu estado</option>
                             <option value="AC">Acre</option>
