@@ -213,13 +213,47 @@ header ul{
 }
 
 
+.campo label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.campo input{
+    font-size: 1rem;
+    min-height: 64px;
+    border-radius: 18px;
+    padding: 18px 22px;
+    border: 1px solid rgba(24, 53, 52, 0.14);
+        background: var(--field);
+}
 
 
+/* O "BUTTONTODOS" ESTÁ ESTILIZANDO TODOS OS BOTÕES DE PROXIMO, VOLTAR E CRIAR CONTA */
+.buttonTodos {
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
 
+.buttonTodos:hover{
+    background-color: var(--amarelo-hover);
+    transform: translateY(-2px);
+    color: var(--preto-main-fundo);
+    border-radius: 5px;
+}
 
-
-
-
+.buttonTodos a{
+    color: var(--preto-main-fundo);
+    text-decoration: none;
+}
 
 
 .requisitos-senha {
@@ -232,7 +266,6 @@ header ul{
 .requisitos-senha.ativo {
   display: block;
 }
-
 
 
 

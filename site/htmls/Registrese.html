@@ -61,12 +61,12 @@
                 <div>
                     <div class="campo">
                         <label for="nome"> Nome Completo</label>
-                        <input type="text" id="nome" requied>
+                        <input type="text" id="nome"  placeholder="Lucas Raineri Giandon" required>
                     </div>
 
                     <div class="campo">
                         <label for="email"> E-mail</label>
-                        <input type="email" id="email" placeholder="nome@gmail.com" requied>
+                        <input type="email" id="email" placeholder="nome@gmail.com" required>
                     </div>
 
                     <div class="campo">
@@ -76,12 +76,12 @@
 
                     <div class="campo">
                         <label for="rg">RG (opcional)</label>
-                        <input type="text" id="rg">
+                        <input type="text" id="rg" placeholder="00.000.000-00">
                     </div>
 
                     <div class="campo">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" minlength="6" required>
+                        <input type="password" id="senha" name="senha" minlength="6" placeholder="Bsouza##23" required>
                          <ul class="requisitos-senha" id="requisitos-senha">
                             <li id="regra-tamanho">Pelo menos 8 caracteres</li>
                             <li id="regra-maiuscula">Uma letra maiúscula</li>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                     <p id="mensagem-passo-1" class="mensagem-erro"></p>
-                    <button type="button" id="botao-proximo-1"> Próximo →</button>
+                    <button type="button" id="botao-proximo-1" class="buttonTodos"> Próximo →</button>
             </section>
 
             <section class="bloco2" id="passo-2">
@@ -226,8 +226,8 @@
                     </div>
 
                         <div class="botoes-navegacao">
-                            <button type="button" id="botao-voltar-2"> ← Voltar</button>
-                            <button type="button" id="botao-proximo-2"> Próximo →</button>
+                            <button type="button" id="botao-voltar-2" class="buttonTodos"> ← Voltar</button>
+                            <button type="button" id="botao-proximo-2" class="buttonTodos"> Próximo →</button>
                         </div>
                 </div>
             </section>
@@ -270,8 +270,8 @@
                     </div>
 
                     <div class="botoes-navegacao">
-                        <button type="button" id="botao-voltar-3"> ← Voltar</button>
-                            <button type="submit"> Criar conta </button>
+                        <button type="button" id="botao-voltar-3" class="buttonTodos"> ← Voltar</button>
+                            <button type="submit" class="buttonTodos"> Criar conta </button>
                     </div>
                 </div>
             </section>
@@ -313,5 +313,7 @@
 
         <p class="pfinal">Nature Brasil - CNPJ 64.711.062/0001-94 - é uma Associação civil sem fins lucrativos que goza de isenção com relação aos tributos federais devidos sobre suas receitas próprias</p>
     </footer>
+
+     <script src="../js/campoSenha.js"></script>
 </body>
 </html>

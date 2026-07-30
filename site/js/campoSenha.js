@@ -12,6 +12,10 @@ campoSenha.addEventListener("focus", function () {
   listaRequisitos.classList.add("ativo");
 });
 
+
+
+// Para que a lista desapareça, o usuário precisa atender todos os requisistos da senha, caso contrario, a lista não desaparecer. 
+// Caso queira que apenas sair do campo seja suficiente para que a lista de requisitos da senha desapareça, precisa retirar a linha do IF e deixar apenas o listaRequisitos...
 campoSenha.addEventListener("blur", function () {
   if (senhaEhValida(campoSenha.value)) {
     listaRequisitos.classList.remove("ativo");
