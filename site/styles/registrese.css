@@ -219,12 +219,12 @@ header ul{
 }
 
 .campo input{
-    font-size: 1rem;
-    min-height: 64px;
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 18px;
-    padding: 18px 22px;
+    padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
-        background: var(--field);
+    background: var(--field);
 }
 
 
@@ -233,14 +233,12 @@ header ul{
     background-color: var(--amarelo);
     border: none;
     border-radius: 5px;
-    padding: 15px 40px;
+    padding: 15px 20px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
     margin-top: 10px;
-    width: 100%;
-    max-width: 400px;
 }
 
 .buttonTodos:hover{
@@ -255,7 +253,6 @@ header ul{
     text-decoration: none;
 }
 
-
 .requisitos-senha {
   display: none;
   margin-top: 12px;
@@ -268,6 +265,31 @@ header ul{
 }
 
 
+/* estilizando o passo a passo 
+.passo .circulo{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:2px solid #0f6b43;
+    background:white;
+    color:#0f6b43;
+}
+
+.passo.ativo .circulo{
+    background:#0f6b43;
+    color:white;
+}
+
+
+.passo.ativo span{
+    color:#0f6b43;
+    font-weight:bold;
+}
+
+.passo span{
+    color:#888;
+}
+*/
 
 /*-----Footer-----*/
 
