@@ -144,10 +144,8 @@ header ul{
     color: var(--branco-header-footer);
 }
 
-
-
 /*-----Main-----*/
-
+/*-----Main----- Bloco 1*/
 .pagina-registrese {
   padding: 25px;
   display: flex;
@@ -169,6 +167,15 @@ header ul{
   /*
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   */
+}
+
+.titulo1 h1{
+    color: var(--verde-agua);
+    
+}
+
+.titulo1 span{
+    font-size: 18px;
 }
 
 .imagem-lateral {
@@ -221,6 +228,14 @@ header ul{
 .campo input{
     font-size: 16px;
     font-weight: bold;
+    border-radius: 18px;
+    padding: 15px 19px;
+    border: 1px solid rgba(24, 53, 52, 0.14);
+    background: var(--field);
+}
+
+.campo select {
+    font-size: 16px;
     border-radius: 18px;
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
@@ -291,6 +306,25 @@ header ul{
 }
 */
 
+.termos input {
+    width:20px;
+    height:15px;
+}
+
+.termos label {
+    font-size: 18px;
+}
+
+.termos a{
+    text-decoration: none;
+    color: var(--verde-agua)
+}
+
+.termos a:hover{
+   text-decoration: underline;
+}
+/*-----Main----- Bloco 2*/
+/*-----Main----- Bloco 3*/
 /*-----Footer-----*/
 
 footer{
