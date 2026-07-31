@@ -324,7 +324,111 @@ header ul{
    text-decoration: underline;
 }
 /*-----Main----- Bloco 2*/
+
+.titulo2 h1{
+    color: var(--verde-agua);
+    
+}
+
+.titulo2 span{
+    font-size: 18px;
+}
+
+.interesse label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.interesse select{
+    font-size: 16px;
+    border-radius: 18px;
+    padding: 15px 19px;
+    border: 1px solid rgba(24, 53, 52, 0.14);
+    background: var(--field);
+}
+
+.reciclagem label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.reciclagem select{
+    font-size: 16px;
+    border-radius: 18px;
+    padding: 15px 19px;
+    border: 1px solid rgba(24, 53, 52, 0.14);
+    background: var(--field);
+}
+
+.transporte label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.transporte select{
+    font-size: 16px;
+    border-radius: 18px;
+    padding: 15px 19px;
+    border: 1px solid rgba(24, 53, 52, 0.14);
+    background: var(--field);
+}
+
+.praticas p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.praticas input{
+    width:20px;
+    height:15px;
+    
+}
+
+.praticas label{
+    font-size: 18px;
+
+}
+
+.produtos p{
+     font-size: 18px;
+    font-weight: bold;
+}
+
+.produtos label {
+    font-size: 18px;
+}
+
+.produtos input {
+    width:20px;
+    height:15px;
+    
+}
+
+.objetivos label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.objetivos select{
+    font-size: 16px;
+    border-radius: 18px;
+    padding: 15px 19px;
+    border: 1px solid rgba(24, 53, 52, 0.14);
+    background: var(--field);
+}
+
+
+
 /*-----Main----- Bloco 3*/
+
+.titulo3 h1{
+    color: var(--verde-agua);
+    
+}
+
+.titulo3 span{
+    font-size: 18px;
+}
 /*-----Footer-----*/
 
 footer{
