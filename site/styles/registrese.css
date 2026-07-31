@@ -429,6 +429,20 @@ header ul{
 .titulo3 span{
     font-size: 18px;
 }
+
+.lista-desafios p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.desafio span{
+    font-size: 18px;
+}
+
+.desafio input{
+    width:20px;
+    height:15px;
+}
 /*-----Footer-----*/
 
 footer{
