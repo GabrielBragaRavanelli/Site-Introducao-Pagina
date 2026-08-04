@@ -83,7 +83,7 @@ header ul{
 
 .button-group {
   display: flex;
-  gap: 50px;       
+  gap: 20px;
 }
 
 .button-group button {
@@ -93,13 +93,18 @@ header ul{
   font-weight: 600;
   transition: all 0.3s;    
   border: 2px solid transparent; 
+   
 }
-
 
 .button-group button a {
   text-decoration: none;
   color: inherit;         
-  display: block;         
+  display: block;  
+  width: 90px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .botao1 button{
@@ -114,13 +119,13 @@ header ul{
     transition: 0.3s;
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 .botao1 button:hover {
     background: var(--verde-agua);
     color: var(--branco-header-footer);
 }
-
 
 .botao2 button{
     background: var(--branco-header-footer);

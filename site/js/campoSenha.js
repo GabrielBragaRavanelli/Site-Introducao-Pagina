@@ -5,14 +5,11 @@
 
 const campoSenha = document.querySelector("#senha");
 
-const listaRequisitos =
-  document.querySelector("#requisitos-senha");
+const listaRequisitos = document.querySelector("#requisitos-senha");
 
 campoSenha.addEventListener("focus", function () {
   listaRequisitos.classList.add("ativo");
 });
-
-
 
 // Para que a lista desapareça, o usuário precisa atender todos os requisistos da senha, caso contrario, a lista não desaparecer. 
 // Caso queira que apenas sair do campo seja suficiente para que a lista de requisitos da senha desapareça, precisa retirar a linha do IF e deixar apenas o listaRequisitos...
