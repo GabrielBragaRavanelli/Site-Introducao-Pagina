@@ -9,16 +9,16 @@
   --amarelo-hover:#e5c700;
   --cinza-fundo: #dfd8d8;
   --bg-top: #eef7f7;
- --bg-bottom: #d7eceb;
- --card: rgba(255, 255, 255, 0.92);
- --card-border: rgba(34, 96, 93, 0.12);
- --text: #183534;
- --muted: #5f7775;
- --accent: #109483;
- --accent-dark: #0b7265;
- --field: #f8fcfb;
- --shadow: 0 24px 80px rgba(16, 74, 70, 0.14);
-    
+  --bg-bottom: #d7eceb;
+    --card: rgba(255, 255, 255, 0.92);
+    --card-border: rgba(34, 96, 93, 0.12);
+    --text: #183534;
+    --muted: #5f7775;
+    --accent: #109483;
+    --accent-dark: #0b7265;
+    --field: #f8fcfb;
+    --shadow: 0 24px 80px rgba(16, 74, 70, 0.14);
+        
 }
 
 *{
@@ -42,7 +42,6 @@ header{
     align-items: center;
     padding: 15px;
     background-color: var(--verde-agua);
-    margin-bottom: 0;
 }
 
 .icone a{
@@ -62,7 +61,7 @@ header ul{
     font-weight: bold;
     align-items: center;
     gap: 40px;
-    margin-right: 450px;
+    margin-right: 500px;
     margin-bottom: 0;
     
 }
@@ -85,7 +84,7 @@ header ul{
 
 .button-group {
   display: flex;
-  gap: 50px;    
+  gap: 20px;
 }
 
 .button-group button {
@@ -95,36 +94,18 @@ header ul{
   font-weight: 600;
   transition: all 0.3s;    
   border: 2px solid transparent; 
-}
-
-.btn-header {
-    background: var(--branco-header-footer);
-    border: 1px solid var(--preto-main-fundo) !important;
-    color: var(--verde-agua);
-    padding: 15px 20px !important;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 16px;
-    display: block;
-}
-
-.btn-header:hover {
-    background: var(--verde-agua);
-    color: var(--branco-header-footer);
-}
-
-.btn-header a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+   
 }
 
 .button-group button a {
   text-decoration: none;
   color: inherit;         
-  display: block;         
+  display: block;  
+  width: 90px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .botao1 button{
@@ -139,13 +120,13 @@ header ul{
     transition: 0.3s;
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 .botao1 button:hover {
     background: var(--verde-agua);
     color: var(--branco-header-footer);
 }
-
 
 .botao2 button{
     background: var(--branco-header-footer);
