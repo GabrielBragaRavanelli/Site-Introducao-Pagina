@@ -225,6 +225,11 @@ header ul{
    
 }
 
+.bloco2,
+.bloco3 {
+  display: none;
+}
+
 /*-----Main----- Bloco 1*/
 .pagina-registrese {
   padding: 25px;
