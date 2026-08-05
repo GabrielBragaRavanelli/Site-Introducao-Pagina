@@ -301,7 +301,7 @@ footer{
     padding-top: 50px;
     border-top: 2px solid var(--preto-main-fundo);
     box-shadow: 0 2px 5px ;
-   
+    margin-top: 80px;
 }
 
 .group-coluna{

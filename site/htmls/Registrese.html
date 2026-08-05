@@ -40,7 +40,6 @@
 
 <main class="pagina-registrese">
     <div class="container-registrese">
-
         <aside class="imagem-lateral"> 
                 <div class="logo-cadastro">
                      <h1>NATURE </h1>
@@ -74,7 +73,7 @@
                     <span>Preencha suas informações para criar sua conta.</span>
                 </div>
 
-                <div>
+                <div class="estrutura-bloco1">
                     <div class="campo">
                         <label for="nome"> Nome Completo</label>
                         <input type="text" id="nome"  placeholder="Digite seu nome completo" required>
@@ -161,14 +160,17 @@
                         <label for="cidade">Cidade</label>
                         <input type="text" id="cidade" placeholder="Digite sua cidade" required>
                         </div>
-
+                </div>
                     <div class="termos">
                         <input type="checkbox" id="aceitar-termos" required>
                         <label for="aceitar-termos"> Li e aceito os <a href="#">Termos de uso</a> e <a href="#">Política de Privacidade</a>.</label>
                     </div>
-                </div>
+
                     <p id="mensagem-passo-1" class="mensagem-erro"></p>
-                    <button type="button" id="botao-proximo-1" class="buttonTodos"> Próximo →</button>
+                    
+                    <div class="botaopasso1">
+                        <button type="button" id="botao-proximo-1" class="buttonTodos"> Próximo →</button>
+                    </div>
             </section>
 
             <section class="bloco2" id="passo-2">
