@@ -31,6 +31,7 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--bege)
 }
 
 /*-----Header-----*/
@@ -43,6 +44,10 @@ header{
     padding: 15px;
     background-color: var(--verde-agua);
     margin-bottom: 80px;
+    max-width: 1900px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 100vmax var(--verde-agua);
+    clip-path: inset(0 -100vmax);
 }
 
 .icone a{
@@ -51,7 +56,7 @@ header{
 
 .icone{
     font-size: 60px;
-    margin-left: 650px;
+    
     color: var(--branco-header-footer);
 }
 
@@ -158,6 +163,7 @@ header ul{
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
+  
 }
 
 .passo {
@@ -238,26 +244,29 @@ header ul{
 
 /*-----Main----- Bloco 1*/
 .pagina-registrese {
-  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .container-registrese{
-  width: 100%;
-  /*
-  max-width: 1200px;
-  */
+  width: 80%;
   min-height: 700px;
   display: grid;
   grid-template-columns: 420px 1fr;
   background-color: var(--branco-header-footer);
   border-radius: 16px;
   overflow: hidden;
-  /*
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 18px 40px rgba(11, 114, 101, 0.28);
+  padding: 60px;
+
+}
+
+.titulo1{
+    margin-bottom: 15px;
 }
 
 .titulo1 h1{
@@ -266,7 +275,8 @@ header ul{
 }
 
 .titulo1 span{
-    font-size: 18px;
+   font-size: 18px;
+
 }
 
 .imagem-lateral {
@@ -360,7 +370,7 @@ header ul{
 }
 
 .termos{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .termos input {
@@ -383,6 +393,10 @@ header ul{
 }
 /*-----Main----- Bloco 2*/
 
+.titulo2 {
+    margin-bottom: 15px;
+}
+
 .titulo2 h1{
     color: var(--verde-agua);
     
@@ -390,6 +404,12 @@ header ul{
 
 .titulo2 span{
     font-size: 18px;
+}
+
+.lista-de-perguntas2{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
 }
 
 .interesse label{
@@ -429,6 +449,11 @@ header ul{
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
     background: var(--field);
+    display: block;
+}
+
+.praticas{
+    margin-top: 15px;
 }
 
 .praticas p {
@@ -447,6 +472,10 @@ header ul{
 
 }
 
+.produtos{
+    margin-top: 15px;
+}
+
 .produtos p{
      font-size: 18px;
     font-weight: bold;
@@ -454,6 +483,7 @@ header ul{
 
 .produtos label {
     font-size: 18px;
+    gap: 15px;
 }
 
 .produtos input {
@@ -505,11 +535,11 @@ header ul{
     max-width: 350px;
     height: 120px;
     padding: 12px 15px;
-    border: 2px solid #cccccc;
+    border: 2px solid var(--preto-main-fundo);
     border-radius: 8px;
     font-size: 14px;
-    color: #333333;
-    background-color: #ffffff;
+    color: var(--cinza-fundo);
+    background-color: var(--branco-header-footer);
     resize: none;
     outline: none;
 }
