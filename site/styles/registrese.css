@@ -157,6 +157,7 @@ header ul{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  gap: 20px;
 }
 
 .passo {
@@ -209,6 +210,7 @@ header ul{
     transition: 0.3s;
     margin-top: 10px;
     width: 10%;
+    
 }
 
 .buttonTodos:hover{
@@ -223,6 +225,10 @@ header ul{
     color: var(--preto-main-fundo);
     text-decoration: none;
    
+}
+
+.botaopasso1 {
+    margin-top: 10px;
 }
 
 .bloco2,
@@ -283,6 +289,7 @@ header ul{
   margin-top: 3px;
   font-size: 18px;
   color: var(--preto-main-fundo);
+  
 }
 
 .imagem-lateral h2 {
@@ -304,6 +311,18 @@ header ul{
  margin: 0 auto;
 }
 
+.estrutura-bloco1{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* Colocar o label acima do input: layout vertical por campo */
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .campo label{
     font-size: 18px;
@@ -317,6 +336,7 @@ header ul{
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
     background: var(--field);
+    width: 100%;
 }
 
 .campo select {
@@ -325,6 +345,7 @@ header ul{
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
     background: var(--field);
+    width: 100%;
 }
 
 .requisitos-senha {
@@ -338,9 +359,14 @@ header ul{
   display: block;
 }
 
+.termos{
+    margin-top: 10px;
+}
+
 .termos input {
     width:20px;
     height:15px;
+    
 }
 
 .termos label {
@@ -475,17 +501,17 @@ header ul{
 }
 
 .campo textarea {
-  width: 350px;
-  height: 120px;
-  padding: 12px 15px;
-  border: 2px solid #cccccc;
-  border-radius: 8px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333333;
-  background-color: #ffffff;
-  resize: none;
-  outline: none;
+    width: 100%;
+    max-width: 350px;
+    height: 120px;
+    padding: 12px 15px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #ffffff;
+    resize: none;
+    outline: none;
 }
 /*-----Footer-----*/
 
@@ -495,7 +521,7 @@ footer{
     padding-top: 50px;
     border-top: 2px solid var(--preto-main-fundo);
     box-shadow: 0 2px 5px ;
-   
+    margin-top: 80px;
 }
 
 .group-coluna{
