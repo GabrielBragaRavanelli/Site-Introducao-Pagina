@@ -48,7 +48,7 @@
                 <img src="../img/earth-americas-solid-full.svg" alt="Planeta Terra" class="imagem-mundo" > 
                 <h1>Crie sua Conta</h1> 
                 <p> Faça parte da mudança e ajude a preservar o nosso planeta para as próximas gerações. </p> 
-            </aside>
+        </aside>
 
         <form action="#" class="form-cadastro" id="form-registro">
             <section class=" bloco1" id="passo-1">
@@ -195,7 +195,7 @@
                         <h1>Passo 2 de 3 - Perfil Ambiental</h1>
                         <span>Conte um pouco sobre seus hábitos e interesses.</span>
                     </div>
-                <div class="lista-de-preguntas2">
+                <div class="lista-de-perguntas2">
                     <div class="interesse">
                         <label for="interesse">Qual tema ambiental mais interessa você?</label>
                         <select id="interesse" name="interesse" required>
@@ -236,15 +236,15 @@
 
                     <div class=" objetivos">
                         <label for="objetivo">Qual objetivo ambiental você deseja cumprir?</label>
-                            <select id="objetivo" name="objetivo" required>
-                                <option value="">Selecione uma opção</option>
-                                <option value="reciclar">Começar a reciclar</option>
-                                <option value="economizar-agua">Economizar mais água</option>
-                                <option value="reduzir-plastico">Reduzir o uso de plástico</option>
-                                <option value="plantar-arvore">Plantar uma árvore</option>
-                                <option value="usar-bicicleta">Utilizar mais bicicleta</option>
-                                <option value="aprender">Aprender mais sobre meio ambiente</option>
-                            </select>
+                        <select id="objetivo" name="objetivo" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="reciclar">Começar a reciclar</option>
+                            <option value="economizar-agua">Economizar mais água</option>
+                            <option value="reduzir-plastico">Reduzir o uso de plástico</option>
+                            <option value="plantar-arvore">Plantar uma árvore</option>
+                            <option value="usar-bicicleta">Utilizar mais bicicleta</option>
+                            <option value="aprender">Aprender mais sobre meio ambiente</option>
+                        </select>
                     </div>
 
                     <div class="produtos">
@@ -253,13 +253,15 @@
                         <label><input type="radio" name="reutilizaveis" value="as-vezes">Às vezes</label>
                         <label><input type="radio" name="reutilizaveis" value="nao">Não</label>
                     </div>
-                    
+                </div>
                     <div class="praticas">
                         <p>Quais atividades sustentáveis você já pratica?</p>
-                        <label><input type="checkbox" name="atividades" value="reciclagem">Separar materiais recicláveis</label>
-                        <label><input type="checkbox" name="atividades" value="economia-agua">Economizar água</label>
-                        <label><input type="checkbox" name="atividades" value="economia-energia">Economizar energia</label>
-                        <label><input type="checkbox" name="atividades" value="menos-plastico">Evitar plástico descartável</label>
+                        <div class="praticas-coluna">
+                            <label><input type="checkbox" name="atividades" value="reciclagem">Separar materiais recicláveis</label>
+                            <label><input type="checkbox" name="atividades" value="economia-agua">Economizar água</label>
+                            <label><input type="checkbox" name="atividades" value="economia-energia">Economizar energia</label>
+                            <label><input type="checkbox" name="atividades" value="menos-plastico">Evitar plástico descartável</label>
+                        </div>
                         <br>
                     </div>
 
@@ -267,7 +269,7 @@
                             <button type="button" id="botao-voltar-2" class="buttonTodos"> ← Voltar</button>
                             <button type="button" id="botao-proximo-2" class="buttonTodos"> Próximo →</button>
                         </div>
-                </div>
+                
             </section>
 
             <section class="bloco3" id="passo-3">
