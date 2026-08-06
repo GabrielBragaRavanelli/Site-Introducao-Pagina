@@ -414,7 +414,7 @@ header ul{
 
 .interesse label{
     font-size: 18px;
-    font-weight: bold;
+    
 }
 
 .interesse select{
@@ -536,6 +536,10 @@ header ul{
 
 /*-----Main----- Bloco 3*/
 
+.titulo3{
+    margin-bottom: 15px;
+}
+
 .titulo3 h1{
     color: var(--verde-agua);
     
@@ -545,6 +549,26 @@ header ul{
     font-size: 18px;
 }
 
+.coluna-desafio{
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+ 
+}
+.coluna-desafio:hover{
+    border-color: var(--cinza-fundo);
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+}
+
+.lista-desafios{
+    margin-top: 10px;
+}
+
 .lista-desafios p{
     font-size: 18px;
     font-weight: bold;
@@ -552,22 +576,24 @@ header ul{
 
 .desafio span{
     font-size: 18px;
+    cursor: pointer;
 }
 
 .desafio input{
     width:20px;
     height:15px;
+    cursor: pointer;
 }
 
 .campo textarea {
     width: 100%;
-    max-width: 350px;
+    max-width: 1000px;
     height: 120px;
     padding: 12px 15px;
     border: 2px solid var(--preto-main-fundo);
     border-radius: 8px;
     font-size: 14px;
-    color: var(--cinza-fundo);
+    color: var(--preto-main-fundo);
     background-color: var(--branco-header-footer);
     resize: none;
     outline: none;

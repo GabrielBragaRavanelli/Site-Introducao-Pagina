@@ -40,16 +40,15 @@
 
 <main class="pagina-registrese">
     <div class="container-registrese">
-        <aside class="imagem-lateral"> 
-                <div class="logo-cadastro">
-                     <h1>NATURE </h1>
-                    <span>Juntos por um futuro <br> mais Verde</span> 
-                </div> 
-                <img src="../img/earth-americas-solid-full.svg" alt="Planeta Terra" class="imagem-mundo" > 
-                <h1>Crie sua Conta</h1> 
-                <p> Faça parte da mudança e ajude a preservar o nosso planeta para as próximas gerações. </p> 
-        </aside>
-
+            <aside class="imagem-lateral"> 
+                    <div class="logo-cadastro">
+                        <h1>NATURE </h1>
+                        <span>Juntos por um futuro <br> mais Verde</span> 
+                    </div> 
+                    <img src="../img/earth-americas-solid-full.svg" alt="Planeta Terra" class="imagem-mundo" > 
+                    <h1>Crie sua Conta</h1> 
+                    <p> Faça parte da mudança e ajude a preservar o nosso planeta para as próximas gerações. </p> 
+            </aside>
         <form action="#" class="form-cadastro" id="form-registro">
             <section class=" bloco1" id="passo-1">
                 <div class="progresso">
@@ -301,35 +300,44 @@
                 
                 <div class="lista-desafios"> 
                     <p>Escolha seu primeiro desafio ambiental</p>
-                    <label class="desafio"> 
-                        <input type="radio" name="primeiro-desafio" value="economizar-agua" required > 
-                        <span class="icone-desafio">💧</span> 
-                        <span> Economizar água durante 7 dias </span> 
-                    </label> 
-
-                    <label class="desafio"> <input type="radio" name="primeiro-desafio" value="reduzir-plastico" > 
-                        <span class="icone-desafio">♻️</span> 
-                            <span> Evitar plástico descartável durante 7 dias </span> 
-                    </label> 
-                    <label class="desafio"> <input type="radio" name="primeiro-desafio" value="separar-reciclaveis" > 
-                        <span class="icone-desafio">🗑️</span> 
-                        <span> Separar materiais recicláveis durante 7 dias </span> 
-                    </label> 
-                    <label class="desafio"> 
-                        <input type="radio" name="primeiro-desafio" value="economizar-energia" > <span class="icone-desafio">⚡</span> 
-                        <span> Economizar energia durante 7 dias </span> 
-                    </label> 
-
-                    <label class="desafio"> 
-                        <input type="radio" name="primeiro-desafio" value="transporte-sustentavel" > 
-                        <span class="icone-desafio">🚲</span> 
-                        <span> Utilizar transporte sustentável </span> 
-                    </label>
-                    <div class="campo"> 
-                        <label for="motivacao"> Por que você deseja ajudar o Meio Ambiente? </label> 
-                        <textarea id="motivacao" name="motivacao" rows="8" maxlength="300" placeholder="Conte um pouco sobre sua motivação..." ></textarea>  
+                    <div>
+                        <div class="coluna-desafio">
+                            <label class="desafio"> 
+                                <input type="radio" name="primeiro-desafio" value="economizar-agua" required > 
+                                <span class="icone-desafio">💧</span> 
+                                <span> Economizar água durante 7 dias </span> 
+                            </label> 
+                        </div>
+                        <div class="coluna-desafio">
+                            <label class="desafio"> <input type="radio" name="primeiro-desafio" value="reduzir-plastico" > 
+                                <span class="icone-desafio">♻️</span> 
+                                    <span> Evitar plástico descartável durante 7 dias </span> 
+                            </label> 
+                        </div>
+                        <div class="coluna-desafio">
+                            <label class="desafio"> <input type="radio" name="primeiro-desafio" value="separar-reciclaveis" > 
+                                <span class="icone-desafio">🗑️</span> 
+                                <span> Separar materiais recicláveis durante 7 dias </span> 
+                            </label> 
+                        </div>
+                        <div class="coluna-desafio">
+                            <label class="desafio"> 
+                                <input type="radio" name="primeiro-desafio" value="economizar-energia" > <span class="icone-desafio">⚡</span> 
+                                <span> Economizar energia durante 7 dias </span> 
+                            </label> 
+                        </div>
+                        <div class="coluna-desafio">
+                            <label class="desafio"> 
+                                <input type="radio" name="primeiro-desafio" value="transporte-sustentavel" > 
+                                <span class="icone-desafio">🚲</span> 
+                                <span> Utilizar transporte sustentável </span> 
+                            </label>
+                        </div>  
+                        <div class="campo"> 
+                            <label for="motivacao"> Por que você deseja ajudar o Meio Ambiente? </label> 
+                            <textarea id="motivacao" name="motivacao" rows="8" maxlength="300" placeholder="Conte um pouco sobre sua motivação..." ></textarea>  
+                        </div>
                     </div>
-
                     <div class="botaopasso3">
                         <button type="button" id="botao-voltar-3" class="buttonTodos"> ← Voltar</button>
                         <button type="submit" class="buttonTodos"> Criar conta </button>
