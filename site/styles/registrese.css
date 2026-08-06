@@ -38,9 +38,7 @@ body{
 
 header{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; 
     padding: 15px;
     background-color: var(--verde-agua);
     margin-bottom: 80px;
@@ -164,6 +162,7 @@ header ul{
   justify-content: center;
   gap: 20px;
   
+  
 }
 
 .passo {
@@ -262,6 +261,7 @@ header ul{
   border-radius: 15px;
   box-shadow: 0 18px 40px rgba(11, 114, 101, 0.28);
   padding: 60px;
+  margin-top: 80px;
 
 }
 
@@ -414,7 +414,7 @@ header ul{
 
 .interesse label{
     font-size: 18px;
-    font-weight: bold;
+    
 }
 
 .interesse select{
@@ -423,6 +423,7 @@ header ul{
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
     background: var(--field);
+    
 }
 
 .reciclagem label{
@@ -436,7 +437,9 @@ header ul{
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
     background: var(--field);
+    display: block;
 }
+
 
 .transporte label{
     font-size: 18px;
@@ -454,17 +457,26 @@ header ul{
 
 .praticas{
     margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 18px 40px rgba(11, 114, 101, 0.28);
+    padding: 15px;
 }
 
 .praticas p {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .praticas input{
     width:20px;
-    height:15px;
-    
+    height:15px;  
+}
+
+.praticas-coluna{
+    display: flex;
+    gap: 45px;
 }
 
 .praticas label{
@@ -473,12 +485,19 @@ header ul{
 }
 
 .produtos{
-    margin-top: 15px;
+  width: 1200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(11, 114, 101, 0.28);
+  margin-top: 15px;
+  padding: 15px;
+  
 }
 
 .produtos p{
      font-size: 18px;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .produtos label {
@@ -492,6 +511,11 @@ header ul{
     
 }
 
+.produtos-coluna{
+    display: flex;
+    gap: 45px;
+}
+
 .objetivos label{
     font-size: 18px;
     font-weight: bold;
@@ -503,9 +527,18 @@ header ul{
     padding: 15px 19px;
     border: 1px solid rgba(24, 53, 52, 0.14);
     background: var(--field);
+     display: block;
+}
+
+.botaopasso2{
+    margin-top: 10px;
 }
 
 /*-----Main----- Bloco 3*/
+
+.titulo3{
+    margin-bottom: 15px;
+}
 
 .titulo3 h1{
     color: var(--verde-agua);
@@ -516,6 +549,26 @@ header ul{
     font-size: 18px;
 }
 
+.coluna-desafio{
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+ 
+}
+.coluna-desafio:hover{
+    border-color: var(--cinza-fundo);
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+}
+
+.lista-desafios{
+    margin-top: 10px;
+}
+
 .lista-desafios p{
     font-size: 18px;
     font-weight: bold;
@@ -523,25 +576,31 @@ header ul{
 
 .desafio span{
     font-size: 18px;
+    cursor: pointer;
 }
 
 .desafio input{
     width:20px;
     height:15px;
+    cursor: pointer;
 }
 
 .campo textarea {
     width: 100%;
-    max-width: 350px;
+    max-width: 1000px;
     height: 120px;
     padding: 12px 15px;
     border: 2px solid var(--preto-main-fundo);
     border-radius: 8px;
     font-size: 14px;
-    color: var(--cinza-fundo);
+    color: var(--preto-main-fundo);
     background-color: var(--branco-header-footer);
     resize: none;
     outline: none;
+}
+
+.botaopasso3{
+    margin-top: 10px;
 }
 /*-----Footer-----*/
 
