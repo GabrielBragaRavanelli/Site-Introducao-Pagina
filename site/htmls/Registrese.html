@@ -111,14 +111,8 @@
                     </div>
 
                     <div class="campo">
-                        <label for="sexo">Sexo</label>
-                        <select id="sexo" required>
-                            <option value="">Selecione</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="outro">Outro</option>
-                            <option value="nao-informar">Prefiro não informar</option>
-                        </select>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
                     </div>
 
                     <div class="campo">
@@ -156,9 +150,15 @@
                     </div>
 
                     <div class="campo">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
-                        </div>
+                        <label for="sexo">Sexo</label>
+                        <select id="sexo" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao-informar">Prefiro não informar</option>
+                        </select>
+                    </div>
                 </div>
                     <div class="termos">
                         <input type="checkbox" id="aceitar-termos" required>
@@ -245,26 +245,61 @@
                             <option value="aprender">Aprender mais sobre meio ambiente</option>
                         </select>
                     </div>
-
+                </div>
                     <div class="produtos">
                         <p>Você costuma utilizar produtos reutilizáveis?</p>
                         <div class="produtos-coluna">
-                            <label><input type="radio" name="reutilizaveis" value="sim" required> Sim</label>
-                            <label><input type="radio" name="reutilizaveis" value="as-vezes">Às vezes</label>
-                            <label><input type="radio" name="reutilizaveis" value="nao">Quase sempre</label>
-                            <label><input type="radio" name="reutilizaveis" value="nao">Não</label>
-                            <label><input type="radio" name="reutilizaveis" value="nao">Quase nunca</label>
-                            <label><input type="radio" name="reutilizaveis" value="nao">Não conheço produtos reutilizáveis</label>
+                            <div class="produtos-divisorias">
+                                <label for="sempre">
+                                    <input type="radio" name="reutilizaveis" value="sempre"> Sempre
+                                </label>
+                            </div>
+                            <div class="produtos-divisorias">
+                                <label for="quase-sempre">
+                                    <input type="radio" name="reutilizaveis" value="quase-sempre">Quase-sempre
+                                </label>
+                            </div>
+                            <div class="produtos-divisorias">
+                              <label for="as-vezes">
+                                <input type="radio" name="reutilizaveis" value="as-vezes">Às vezes
+                                </label>
+                            </div>
+                            <div class="produtos-divisorias">
+                             <label for="quase-nunca">
+                                <input type="radio" name="reutilizaveis" value="quase-nunca">Quase nunca
+                                </label>
+                            </div>
+                            <div class="produtos-divisorias">
+                                 <label>
+                                    <input type="radio" name="reutilizaveis" value="nao">nunca
+                                </label> 
+                            </div>
                         </div>
                     </div>
-                </div>
                     <div class="praticas">
                         <p>Quais atividades sustentáveis você já pratica?</p>
                         <div class="praticas-coluna">
-                            <label><input type="checkbox" name="atividades" value="reciclagem">Separar materiais recicláveis</label>
-                            <label><input type="checkbox" name="atividades" value="economia-agua">Economizar água</label>
-                            <label><input type="checkbox" name="atividades" value="economia-energia">Economizar energia</label>
-                            <label><input type="checkbox" name="atividades" value="menos-plastico">Evitar plástico descartável</label>
+                            <div class="praticas-divisorias">
+                                <label for="reciclagem">
+                                    <input type="checkbox" name="atividades" value="reciclagem">Separar materiais recicláveis
+                                </label>
+                            </div>
+                            <div class="praticas-divisorias">
+                                <label for="economia-agua">
+                                    <input type="checkbox" name="atividades" value="economia-agua">Economizar água
+                                </label>
+                            </div>
+                            <div class="praticas-divisorias">
+                                <label for="economia-energia">
+                                    <input type="checkbox" name="atividades" value="economia-energia">Economizar energia
+                                </label>
+                            </div>
+                            <div class="praticas-divisorias">
+                                <label for="menos-plastico">
+                                    <input type="checkbox" name="atividades" value="menos-plastico">Evitar plástico descartável
+                                </label>
+                            </div>
+                           
                         </div>
                         <br>
                     </div>
@@ -273,7 +308,6 @@
                             <button type="button" id="botao-voltar-2" class="buttonTodos"> ← Voltar</button>
                             <button type="button" id="botao-proximo-2" class="buttonTodos"> Próximo →</button>
                         </div>
-                
             </section>
 
             <section class="bloco3" id="passo-3">
