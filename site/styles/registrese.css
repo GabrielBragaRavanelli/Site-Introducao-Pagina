@@ -156,6 +156,8 @@ header ul{
 /*-----Main-----*/
 /* Estilização das linas e circulos que estão presesntes no boloco 1,2 e 3 */
 
+
+
 .progresso {
   display: flex;
   align-items: flex-start;
@@ -475,94 +477,133 @@ header ul{
 }
 
 .produtos{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background-color: var(--verde-claro);
-    padding: 15px;
+    background-color: var(--branco-header-footer);
+    border: 1px solid var(--cinza-fundo);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
 }
 
 .produtos p{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
     color: var(--verde-agua);
-    
+    font-size: 18px;
+    margin: 0 0 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .produtos label {
     font-size: 18px;
-    
+    color: var(--preto-main-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .produtos input {
-   width:20px;
-   height:15px;  
+    width: 20px;
+    height: 20px;
+    background-color: var(--verde-agua);
 }
 
 .produtos-coluna{
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
 }
 
 .produtos-divisorias{
-  margin-top: 10px;
-  border: 1px solid var(--cinza-fundo);
-  border-radius: 10px;
-  padding: 10px;
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 20px;
+    height: 80px;
+    background-color:var(--branco-header-footer);
+    border: 1px solid var(--cinza-fundo);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+    
   
 }
 
+.produtos-divisorias:hover{
+    border-color: var(--verde-agua);
+    transform: translateY(-5px);
+}
 
 .praticas{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background-color: var(--verde-claro);
-    padding: 15px;
+    background-color:var(--branco-header-footer);
+    border: 1px solid var(--cinza-fundo);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
 
 }
 
 .praticas p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
     color: var(--verde-agua);
-    cursor: pointer;
+    font-size: 20px;
+    margin: 0 0 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
 }
 
 .praticas input{
-    width:20px;
-    height:15px;  
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    background-color: var(--verde-agua);
     cursor: pointer;
 }
 
 .praticas-coluna{
-    display: flex;
-    gap: 26px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
 }
 
 .praticas label{
     font-size: 18px;
-    cursor: pointer;
+    color: var(--preto-main-fundo);
+    display: flex;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .praticas-divisorias{
-  margin-top: 10px;
-  border: 1px solid var(--cinza-fundo);
-  border-radius: 10px;
-  padding: 10px;
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 20px;
-  cursor: pointer;
- 
+    height: 130px;
+    background-color: var(--branco-header-footer);
+    border: 1px solid var(--cinza-fundo);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.praticas-divisorias:hover {
+    border-color: var(--verde-agua);
+    transform: translateY(-5px);
+}
+
+
+.produtos-divisorias:has(input:checked),
+.praticas-divisorias:has(input:checked) {
+    border: 2px solid var(--verde-agua);
+    background-color:var(--verde-agua);
+    border: none;
+    font-weight: 400;
 }
 
 .botaopasso2{
