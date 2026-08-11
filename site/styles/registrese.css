@@ -345,7 +345,7 @@ header ul{
    font-size: 16px;
     border-radius: 18px;
     padding: 20px 22px;
-    border: 1px solid rgba(24, 53, 52, 0.14);
+    border: 1px solid rgba(34, 96, 93, 0.12);
     width: 63%;
 }
 
@@ -423,7 +423,7 @@ header ul{
     font-size: 18px;
     border-radius: 18px;
     padding: 20px 22px;
-    border: 1px solid rgba(24, 53, 52, 0.14);
+    border: 1px solid rgba(34, 96, 93, 0.12);
     width: 80%;
     margin-top: 8px;
 }
@@ -478,7 +478,7 @@ header ul{
 
 .produtos{
     background-color: var(--branco-header-footer);
-    border: 1px solid var(--cinza-fundo);
+    border: 1px solid rgba(34, 96, 93, 0.12);
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 25px;
@@ -494,17 +494,11 @@ header ul{
 
 .produtos label {
     font-size: 18px;
-    color: var(--preto-main-fundo);
+    color: var(--verde-agua);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.produtos input {
-    width: 20px;
-    height: 20px;
-    background-color: var(--verde-agua);
 }
 
 .produtos-coluna{
@@ -516,7 +510,7 @@ header ul{
 .produtos-divisorias{
     height: 80px;
     background-color:var(--branco-header-footer);
-    border: 1px solid var(--cinza-fundo);
+    border: 1px solid rgba(34, 96, 93, 0.12);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -525,8 +519,33 @@ header ul{
     gap: 18px;
     cursor: pointer;
     transition: 0.5s;
-    
-  
+}
+
+.produtos-divisorias input[type="radio"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--verde-agua);
+    border-radius: 50%;
+    background-color: var(--branco-header-footer);
+    cursor: pointer;
+    position: relative;
+}
+
+.produtos-divisorias input[type="radio"]:checked {
+    background-color:var(--branco-header-footer);
+    border-color: var(--branco-header-footer);
+}
+
+.produtos-divisorias input[type="radio"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text);
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .produtos-divisorias:hover{
@@ -536,7 +555,7 @@ header ul{
 
 .praticas{
     background-color:var(--branco-header-footer);
-    border: 1px solid var(--cinza-fundo);
+    border: 1px solid rgba(34, 96, 93, 0.12);
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 25px;
@@ -545,19 +564,17 @@ header ul{
 
 .praticas p {
     color: var(--verde-agua);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 8px;
     font-weight: bold;
     margin-bottom: 20px;
-   display: flex;
-   justify-content: center;
 }
 
 .praticas input{
     margin: 0;
     width: 18px;
     height: 18px;
-    background-color: var(--verde-agua);
+    background-color:var(--verde-agua);
     cursor: pointer;
 }
 
@@ -569,7 +586,7 @@ header ul{
 
 .praticas label{
     font-size: 18px;
-    color: var(--preto-main-fundo);
+    color: var(--verde-agua);
     display: flex;
     gap: 10px;
     display: flex;
@@ -581,7 +598,7 @@ header ul{
 .praticas-divisorias{
     height: 130px;
     background-color: var(--branco-header-footer);
-    border: 1px solid var(--cinza-fundo);
+    border: 1px solid rgba(34, 96, 93, 0.12);
     border-radius: 12px;
     cursor: pointer;
     transition: 0.5s;
@@ -589,9 +606,43 @@ header ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
 }
 
+
+.praticas-divisorias input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--verde-agua);
+    border-radius: 50%;
+    background-color: var(--branco-header-footer);
+    cursor: pointer;
+    position: relative;
+}
+
+.praticas-divisorias input[type="checkbox"]:checked {
+    background-color:var(--branco-header-footer);
+    border-color: var(--branco-header-footer);
+}
+
+.praticas-divisorias input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*
+.praticas-divisorias:has(input:checked)::after {
+    background-color: var(--branco-header-footer);
+}
+*/
 .praticas-divisorias:hover {
     border-color: var(--verde-agua);
     transform: translateY(-5px);
@@ -599,12 +650,18 @@ header ul{
 
 
 .produtos-divisorias:has(input:checked),
-.praticas-divisorias:has(input:checked) {
-    border: 2px solid var(--verde-agua);
-    background-color:var(--verde-agua);
+.praticas-divisorias:has(input:checked){
     border: none;
+    background-color:var(--verde-agua);
+    color: var(--branco-header-footer);
     font-weight: 400;
 }
+
+.produtos-divisorias:has(input:checked) label,
+.praticas-divisorias:has(input:checked) label {
+    color: var(--branco-header-footer);
+}
+
 
 .botaopasso2{
    display: flex;
@@ -629,7 +686,7 @@ header ul{
 
 .coluna-desafio{
   margin-top: 10px;
-  border: 1px solid var(--cinza-fundo);
+  border: 1px solid rgba(34, 96, 93, 0.12);
   border-radius: 10px;
   padding: 10px;
   width: 100%;
