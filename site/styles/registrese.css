@@ -406,12 +406,14 @@ header ul{
   
 }
 
+
 .lista-de-perguntas2{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
     margin-bottom: 30px;
 }
+
 
 .interesse label{
     font-size: 18px;
@@ -475,6 +477,7 @@ header ul{
     width: 80%;
     margin-top: 8px;
 }
+
 
 .produtos{
     background-color: var(--branco-header-footer);
@@ -638,7 +641,7 @@ header ul{
 }
 
 
-/*
+
 .praticas-divisorias:has(input:checked)::after {
     background-color: var(--branco-header-footer);
 }
@@ -694,10 +697,39 @@ header ul{
   margin-bottom: 20px;
  
 }
+
+.coluna-desafio input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--verde-agua);
+    border-radius: 50%;
+    background-color: var(--branco-header-footer);
+    cursor: pointer;
+    position: relative;
+}
+
+.coluna-desafio input[type="radio"]:checked {
+    background-color:var(--verde-agua);
+    border-color: var(--verde-agua);
+}
+
+.coluna-desafio input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--verde-agua);
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .coluna-desafio:hover{
-    border-color: var(--cinza-fundo);
+    border-color: var(--verde-agua);
     box-shadow: 0 3px 8px rgba(0,0,0,.08);
     cursor: pointer;
+    transform: translateY(-5px);
 }
 
 .lista-desafios{
