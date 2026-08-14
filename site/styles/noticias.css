@@ -34,12 +34,16 @@ body{
 /*-----header-----*/
 header{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
     padding: 15px;
     background-color: var(--verde-agua);
     margin-bottom: 80px;
+    max-width: 1900px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 100vmax var(--verde-agua);
+    clip-path: inset(0 -100vmax);
 }
 
 .icone a{
@@ -48,7 +52,7 @@ header{
 
 .icone{
     font-size: 60px;
-    margin-left: 650px;
+    
     color: var(--branco-header-footer);
 }
 
@@ -78,8 +82,9 @@ header ul{
 .cabecalho {
   display: flex;
   align-items: center; 
-  gap: 30px;          
+  gap: 30px;       
 }
+
 
 .button-group {
   display: flex;

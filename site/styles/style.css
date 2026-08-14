@@ -255,14 +255,20 @@ header ul{
 .botao-carrossel {
     background-color: var(--amarelo);
     color: var(--preto-main-fundo);
-    padding: 20px 20px;
+    width: 180px;
+    min-height: 58px;
+    padding: 16px 20px;
     border: none;
     border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .botao-carrossel:hover {
@@ -280,7 +286,12 @@ header ul{
     color: var(--branco-header-footer);
     border: 2px solid rgba(255, 255, 255, 0.4);
     font-size: 32px;
-    padding: 16px 22px;
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     border-radius: 8px;
     transition: all 0.3s ease;

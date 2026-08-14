@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/registrese.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="../img/earth-americas-solid-full.svg" type="image/x-icon">
+
     <title>Registre-se - Nature</title>
 </head>
 <body>
@@ -45,9 +46,11 @@
                         <h1>NATURE </h1>
                         <span>Juntos por um futuro <br> mais Verde</span> 
                     </div> 
-                    <img src="../img/earth-americas-solid-full.svg" alt="Planeta Terra" class="imagem-mundo" > 
-                    <h1>Crie sua Conta</h1> 
-                    <p> Faça parte da mudança e ajude a preservar o nosso planeta para as próximas gerações. </p> 
+                    <div class="img-cadastro">
+                        <img src="../img/earth-americas-solid-full.svg" alt="Planeta Terra" class="imagem-mundo" > 
+                        <h1>Crie sua Conta</h1> 
+                        <p> Faça parte da mudança <br> e ajude a preservar o nosso planeta <br> para as próximas gerações. </p> 
+                    </div>
             </aside>
         <form action="#" class="form-cadastro" id="form-registro">
             <section class=" bloco1" id="passo-1">
@@ -91,23 +94,6 @@
                     <div class="campo">
                         <label for="rg">RG (opcional)</label>
                         <input type="text" id="rg" placeholder="Digite seu RG">
-                    </div>
-
-                    <div class="campo">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" minlength="6" placeholder="Bsouza##23" required>
-                         <ul class="requisitos-senha" id="requisitos-senha">
-                            <li id="regra-tamanho">Pelo menos 8 caracteres</li>
-                            <li id="regra-maiuscula">Uma letra maiúscula</li>
-                            <li id="regra-minuscula">Uma letra minúscula</li>
-                            <li id="regra-numero">Um número</li>
-                            <li id="regra-especial">Um caractere especial</li>
-                        </ul>
-                    </div>
-
-                    <div class="campo">
-                        <label for="confirmar-senha">Confirmar senha</label>
-                        <input type="password"id="confirmar-senha" minlength="6" placeholder="Confirme sua senha" required>
                     </div>
 
                     <div class="campo">
@@ -163,6 +149,23 @@
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
                         </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" minlength="6" placeholder="Bsouza##23" required>
+                         <ul class="requisitos-senha" id="requisitos-senha">
+                            <li id="regra-tamanho">Pelo menos 8 caracteres</li>
+                            <li id="regra-maiuscula">Uma letra maiúscula</li>
+                            <li id="regra-minuscula">Uma letra minúscula</li>
+                            <li id="regra-numero">Um número</li>
+                            <li id="regra-especial">Um caractere especial</li>
+                        </ul>
+                    </div>
+
+                    <div class="campo">
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <input type="password"id="confirmar-senha" minlength="6" placeholder="Confirme sua senha" required>
                     </div>
                 </div>
                     <div class="termos">
