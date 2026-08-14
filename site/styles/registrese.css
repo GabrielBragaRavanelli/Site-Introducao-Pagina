@@ -245,6 +245,7 @@ header ul{
 }
 
 /*-----Main----- Bloco 1*/
+
 .pagina-registrese {
   display: flex;
   align-items: center;
@@ -258,6 +259,7 @@ header ul{
   max-height: 1000px;
   display: grid;
   grid-template-columns: 420px 1fr;
+  align-items: stretch;
   background-color: var(--branco-header-footer);
   border-radius: 16px;
   overflow: hidden;
@@ -284,45 +286,54 @@ header ul{
 }
 
 .imagem-lateral {
-    /*
-  background: linear-gradient(180deg,#f5f9ed 0%,#edf5e5 100%);
-  */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  min-height: 760px;
+  margin: -60px 0 -60px -60px;
+  padding: 40px 24px;
+  border-radius: 24px 0 0 24px;
+  background: linear-gradient(rgba(7, 31, 27, 0.35), rgba(7, 31, 27, 0.45)),url('../img/paisagem.jpg') center center/cover no-repeat;
+  color: var(--branco-header-footer);
 }
 
 .logo-cadastro h1{
     font-size: 36px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .logo-cadastro span {
   display: block;
   margin-top: 3px;
   font-size: 18px;
-  color: var(--preto-main-fundo);
-  
-}
-
-.imagem-lateral h2 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: var(--preto-main-fundo);
+  color: var(--branco-header-footer);
 }
 
 .imagem-lateral p {
-  max-width: 230px;
   font-size: 18px;
-  line-height: 1.6;
- color: var(--preto-main-fundo);
+  color: var(--branco-header-footer);
+  
+}
+
+.img-cadastro h1{
+  margin-bottom: 5px;
+  color: var(--branco-header-footer);
+  font-weight: bold;
+}
+
+.img-cadastro img {
+   filter: invert(100%);
 }
 
 .form-cadastro {
  background-color: var(--branco-header-footer);
  width: min(100%,1280px);
  margin: 0 auto;
+ padding-left: 35px;
 }
 
 .estrutura-bloco1{
@@ -449,8 +460,8 @@ header ul{
 }
 
 .termos input[type="checkbox"]:checked {
-    background-color:var(--branco-header-footer);
-    border-color: var(--text);
+    background-color:var(--verde-agua);
+    border-color: var(--verde-agua);
 }
 
 .termos input[type="checkbox"]:checked::after {
@@ -459,7 +470,7 @@ header ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text);
+    color: var(--branco-header-footer);
     font-size: 13px;
     font-weight: bold;
 }
