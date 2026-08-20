@@ -34,9 +34,8 @@ body{
 /*-----header-----*/
 header{
     width: 100%;
-    display: flex; 
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     padding: 15px;
     background-color: var(--verde-agua);
     margin-bottom: 80px;
@@ -52,8 +51,8 @@ header{
 
 .icone{
     font-size: 60px;
-    
     color: var(--branco-header-footer);
+    justify-self: start;
 }
 
 header ul{
@@ -63,7 +62,7 @@ header ul{
     font-weight: bold;
     align-items: center;
     gap: 40px;
-    margin-right: 500px;
+    margin-right: 0;
     margin-bottom: 0;
     
 }
@@ -80,9 +79,17 @@ header ul{
 }
 
 .cabecalho {
-  display: flex;
-  align-items: center; 
-  gap: 30px;       
+    display: contents;
+}
+
+.header1 {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.header2 {
+    grid-column: 3;
+    justify-self: end;
 }
 
 
