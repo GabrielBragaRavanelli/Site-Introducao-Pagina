@@ -12,6 +12,15 @@ function mostrarBloco(blocoEscolhido) {
   bloco2.style.display = "none";
   bloco3.style.display = "none";
 
+  const etapaAtual = blocoEscolhido === bloco1 ? 0 : blocoEscolhido === bloco2 ? 1 : 2;
+
+  document.querySelectorAll(".progresso").forEach(function (progresso) {
+    progresso.querySelectorAll(".passo").forEach(function (passo, indice) {
+      passo.classList.toggle("ativo", indice === etapaAtual);
+      passo.classList.toggle("concluido", indice < etapaAtual);
+    });
+  });
+
   blocoEscolhido.style.display = "block";
 
 
