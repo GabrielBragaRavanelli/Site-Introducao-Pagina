@@ -33,13 +33,16 @@ body{
 
 /*------------- Header ------------- */
 header{
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 15px;
     background-color: var(--verde-agua);
-    margin-bottom: 80px;
+    max-width: 1900px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 100vmax var(--verde-agua);
+    clip-path: inset(0 -100vmax);
 }
 
 .icone a{
@@ -61,7 +64,6 @@ header ul{
     gap: 40px;
     margin-right: 0;
     margin-bottom: 0;
-    
 }
 
 
@@ -88,6 +90,7 @@ header ul{
     grid-column: 3;
     justify-self: end;
 }
+
 
 .button-group {
   display: flex;
@@ -133,6 +136,7 @@ header ul{
 .botao1 button:hover {
     background: var(--verde-agua);
     color: var(--branco-header-footer);
+    border-color: var(--branco-header-footer);
 }
 
 .botao2 button{
@@ -152,7 +156,9 @@ header ul{
 .botao2 button:hover {
     background: var(--verde-agua);
     color: var(--branco-header-footer);
+    border-color: var(--branco-header-footer);
 }
+
 
 /*------------- Main ------------- */
 
@@ -175,11 +181,14 @@ main {
 }
 
 .content h1 {
+    display: flex;
+    justify-content: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: var(--preto-main-fundo);
     margin-top: 20px;
     font-weight: bold;
+    margin-top: 80px;
 }
 
 .content-columns1, 
