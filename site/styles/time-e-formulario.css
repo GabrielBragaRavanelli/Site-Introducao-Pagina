@@ -32,6 +32,7 @@ body {
 	min-height: 100vh;
 	font-family: 'poppins', sans-serif;
 	background: url("../img/green-comemoracao.vif.avif") center / cover fixed no-repeat;
+	zoom: 0.8;
 }
 
 img {
