@@ -24,11 +24,11 @@ function mostrarBloco(blocoEscolhido) {
   blocoEscolhido.style.display = "block";
 
 
-// Quando o indivíduo avançar para o proximo passo, a página volta para o topo 
-// top: 0 faz voltar para o otpo
-// smooth é uma suavisação na hora da página ir apar o topo
-// scrollTo() altera a posição da página
-// window representa a janela do navegador
+  // Quando o indivíduo avançar para o proximo passo, a página volta para o topo 
+  // top: 0 faz voltar para o otpo
+  // smooth é uma suavisação na hora da página ir apar o topo
+  // scrollTo() altera a posição da página
+  // window representa a janela do navegador
   window.scrollTo({
     top: 0,
     behavior: "smooth"

@@ -32,6 +32,7 @@ body {
 	min-height: 100vh;
 	font-family: 'poppins', sans-serif;
 	background: url("../img/green-comemoracao.vif.avif") center / cover fixed no-repeat;
+	zoom: 0.8;
 }
 
 img {
@@ -223,6 +224,34 @@ textarea {
 }
 
 .botao-formulario button:active {
+	transform: translateY(0);
+}
+
+/* Botão Voltar */
+.btn-voltar {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 20px;
+	border: 2px solid var(--verde-agua);
+	border-radius: 10px;
+	background-color: transparent;
+	color: var(--verde-agua);
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+	transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+	margin-bottom: 20px;
+}
+
+.btn-voltar:hover {
+	transform: translateY(-1px);
+	background-color: var(--verde-agua);
+	color: var(--branco-header-footer);
+}
+
+.btn-voltar:active {
 	transform: translateY(0);
 }
 
