@@ -10,6 +10,7 @@ body {
     letter-spacing: normal;
     font-family: "Poppins", sans-serif;
     padding-top: 100px;
+    background-color: var(--bege);
     zoom: 0.8;
 }
 
@@ -164,115 +165,168 @@ header ul {
     justify-self: end;
 }
 
+.button-group {
+    display: flex;
+    gap: 20px;
+}
 
-/*------------- Main ------------- */
+.button-group button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
 
-.pagina-registrese {
+.button-group button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 90px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.container-registrese {
-
-    width: 80%;
-    height: 100%;
-    max-height: 1000px;
-    display: grid;
-    grid-template-columns: 420px 1fr;
-    align-items: stretch;
-    background-color: var(--branco-header-footer);
-    border-radius: 16px;
-    overflow: hidden;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 18px 40px rgba(11, 114, 101, 0.28);
-    padding: 60px;
-    margin-top: 80px;
-
+.botao1 button {
+    background: var(--branco-header-footer);
+    border: 1px solid var(--preto-main-fundo);
+    color: var(--verde-agua);
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.titulo1 {
-    margin-bottom: 35px;
+.botao1 button:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+    border-color: var(--branco-header-footer);
+}
+
+.botao2 button {
+    background: var(--branco-header-footer);
+    border: 1px solid var(--preto-main-fundo);
+    color: var(--verde-agua);
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao2 button:hover {
+    background: var(--verde-agua);
+    color: var(--branco-header-footer);
+    border-color: var(--branco-header-footer);
+}
+
+
+/*------------- Main Login Centralizado com Imagem de Fundo ------------- */
+
+.pagina-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    padding: 60px 20px 80px;
+    background: linear-gradient(rgba(18, 48, 41, 0.35), rgba(18, 48, 41, 0.45)), url('../img/jacek-ulinski-KFtxqMnbMD4-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 42px 36px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-form {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.progresso {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(35, 83, 71, 0.08);
+    color: var(--verde-agua);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.progresso i {
+    font-size: 12px;
 }
 
 .titulo1 h1 {
     color: var(--verde-agua);
-
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    line-height: 1.2;
 }
 
 .titulo1 span {
-    font-size: 18px;
-
+    font-size: 15px;
+    color: var(--muted);
+    display: block;
+    line-height: 1.4;
 }
 
-.imagem-lateral {
-    position: relative;
+/* ------------- Campos do formulário ------------- */
+
+.campo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 760px;
-    margin: -60px 0 -60px -60px;
-    padding: 40px 24px;
-    border-radius: 24px 0 0 24px;
-    background: linear-gradient(rgba(7, 31, 27, 0.35), rgba(7, 31, 27, 0.45)), url('../img/paisagem3.jpg') center center/cover no-repeat;
-    color: var(--branco-header-footer);
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-.logo-cadastro h1 {
-    font-size: 48px;
+.campo label {
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 5px;
-    text-shadow: 0 2px 8px rgba(7, 31, 27, 0.45);
-
-}
-
-.img-cadastro h1 {
-    font-size: 48px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-shadow: 0 2px 8px rgba(7, 31, 27, 0.45);
-
-}
-
-.img-cadastro img {
-    filter: invert(100%);
-}
-
-.form-login {
-    background-color: var(--branco-header-footer);
-    width: min(100%, 1280px);
-    margin: 0 auto;
-    padding-left: 35px;
-}
-
-/* ------------- Inputs do formulário ------------- */
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-}
-
-.input-group label {
-    font-size: 16px;
-    font-weight: 600;
+    color: var(--preto-main-fundo);
     margin-bottom: 8px;
-    color: var(--text);
 }
 
 .input-wrapper {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .input-icon-left {
     position: absolute;
-    left: 16px;
+    left: 18px;
     font-size: 16px;
     color: var(--muted);
     pointer-events: none;
@@ -284,31 +338,32 @@ header ul {
     color: var(--verde-agua);
 }
 
-.input-group input {
+.campo input {
     width: 100%;
-    height: 50px;
-    padding: 0 18px 0 44px;
+    height: 52px;
+    padding: 0 48px 0 46px;
     background-color: var(--branco-header-footer);
     border: 1.5px solid var(--card-border);
     border-radius: 18px;
     color: var(--preto-main-fundo);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.input-group input:hover {
+.campo input:hover {
     border-color: var(--verde-agua);
 }
 
-.input-group input:focus {
+.campo input:focus {
     border: 2px solid var(--verde-agua);
     box-shadow: 0 0 0 3px rgba(16, 148, 131, 0.12);
 }
 
-.input-group input::placeholder {
+.campo input::placeholder {
     color: #a0b0ad;
     font-weight: 400;
 }
@@ -317,7 +372,7 @@ header ul {
 
 .toggle-senha {
     position: absolute;
-    right: 14px;
+    right: 16px;
     background: none;
     border: none;
     cursor: pointer;
@@ -328,47 +383,36 @@ header ul {
     color: var(--muted);
     font-size: 17px;
     transition: color 0.2s ease;
-    z-index: 1;
+    z-index: 2;
 }
 
 .toggle-senha:hover {
     color: var(--verde-agua);
 }
 
-/* ------------- Seção lembrar / esqueci senha ------------- */
+/* ------------- Seção Lembrar-me / Esqueci Senha ------------- */
 
 .secao {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
-}
-
-.esqueci-senha a {
-    color: var(--verde-agua);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.2s ease;
-}
-
-.esqueci-senha a:hover {
-    text-decoration: underline;
-    color: var(--accent-dark);
+    margin-top: 2px;
+    margin-bottom: 22px;
 }
 
 .lembrar-senha {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .lembrar-senha input[type="checkbox"] {
     appearance: none;
-    width: 17px;
-    height: 17px;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
     border: 2px solid var(--verde-agua);
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: var(--branco-header-footer);
     cursor: pointer;
     position: relative;
@@ -395,38 +439,56 @@ header ul {
     font-size: 14px;
     color: var(--text);
     cursor: pointer;
+    user-select: none;
 }
 
-/* ------------- Botão Entrar ------------- */
+.esqueci-senha a {
+    color: var(--verde-agua);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.esqueci-senha a:hover {
+    text-decoration: underline;
+    color: var(--accent-dark);
+}
+
+/* ------------- Botão Entrar (Padrão Amarelo Nature) ------------- */
 
 .botao {
     margin-bottom: 20px;
 }
 
 .botao-entrar {
-    font-size: 18px;
-    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     width: 100%;
-    height: 50px;
-    color: var(--branco-header-footer);
-    background-color: var(--verde-agua);
-    border: 2px solid var(--verde-agua);
-    border-radius: 25px;
+    height: 52px;
+    color: var(--preto-main-fundo);
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 14px rgba(255, 222, 0, 0.28);
 }
 
 .botao-entrar:hover {
-    background-color: var(--verde-agua);
-    border-color: var(--verde-agua);
+    background-color: var(--amarelo-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(11, 114, 101, 0.3);
+    box-shadow: 0 6px 18px rgba(229, 199, 0, 0.4);
+    color: var(--preto-main-fundo);
 }
 
 .botao-entrar:active {
     transform: translateY(0);
-    box-shadow: none;
 }
 
 /* ------------- Divisor OU ------------- */
@@ -445,7 +507,7 @@ header ul {
 }
 
 .texto-ou {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--muted);
     font-weight: 500;
     white-space: nowrap;
@@ -462,29 +524,28 @@ header ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     width: 100%;
     height: 50px;
     background-color: var(--branco-header-footer);
-    border: 1.5px solid var(--verde-agua);
-    border-radius: 25px;
-    font-size: 16px;
+    border: 1.5px solid var(--card-border);
+    border-radius: 8px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--text);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-google:hover {
-    background-color: var(--branco-header-footer);
     border-color: var(--verde-agua);
+    background-color: var(--field);
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(11, 114, 101, 0.15);
+    box-shadow: 0 4px 14px rgba(11, 114, 101, 0.12);
 }
 
 .btn-google:active {
     transform: translateY(0);
-    box-shadow: none;
 }
 
 .google-icon {
@@ -512,14 +573,6 @@ header ul {
 .termo a:hover {
     text-decoration: underline;
     color: var(--accent-dark);
-}
-
-/* ------------- Progresso ------------- */
-
-.progresso p {
-    font-size: 14px;
-    color: var(--muted);
-    margin-bottom: 10px;
 }
 
 /*------------- Footer Premium ------------- */
@@ -716,7 +769,7 @@ header ul {
     -webkit-text-fill-color: var(--branco-header-footer);
 }
 
-/* Footer Responsivo */
+/* Responsividade */
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -725,6 +778,14 @@ header ul {
 }
 
 @media (max-width: 768px) {
+    .pagina-login {
+        padding: 40px 16px 60px;
+    }
+
+    .titulo1 h1 {
+        font-size: 1.8rem;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;

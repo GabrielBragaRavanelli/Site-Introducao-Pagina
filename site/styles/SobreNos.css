@@ -542,8 +542,7 @@ h1 {
 .cadastrar {
     margin-top: 80px;
     margin-bottom: 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -628,7 +627,7 @@ h1 {
 .footer-premium {
     background: linear-gradient(180deg, #1a3d34 0%, #0f2820 100%);
     color: var(--branco-header-footer);
-    margin-top: 80px;
+    margin-top: 0;
     padding: 0;
     font-family: 'Poppins', 'Montserrat', sans-serif;
 }
